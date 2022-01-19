@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #container{
+        width: 28%;
+        height: 650px;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    .imgdiv{
+        height: 10%;
+        width: 70%;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #container>a{
+        text-decoration: none;
+        color: black;
+    }
+    #form>div{
+margin-top: 10px;
+margin-bottom: 5px;
+font-weight: bold;
+font-family: Roboto;
+color: #424242;
+font-family: sans-serif;
+
+    }
+    #form>input{
+        width: 95%;
+        height: 25px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        padding-left: 5px;
+    }
+    #btn{
+background-color: #ff7043;
+margin-top: 10px;
+width: 90%;
+/* margin: auto; */
+margin-left: 15px;
+padding: 10px;
+border-radius: 7px;
+border: 0px;
+color: white;
+font-weight: bold;
+
+
+    }
+    h5{
+        
+       margin-top: 5px;
+       color: #424242;
+    }
+    #btn:hover{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div class="imgdiv">
+            <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc-logo-s.jpg" alt="">
+        </div>
+        <a href=""><h3> &lt; Register</h3></a>
+        <div>
+            <form id="form">
+                <div>Full Name</div>
+                <input type="text" placeholder="Enter Your Full Name" id="name" required>
+                <div style="font-family: Roboto-Medium;">Mobile No.</div>
+                <input type="text" placeholder="Enter Your Full Name" id="mobile" required>
+                <h5>OTP will be sent on this Mobile No. for verification.</h5>
+                <div>Email id</div>
+                <input type="text" placeholder="Enter Your Full Name" id="email" required>
+                <div>Password</div>
+                <input type="password" placeholder="Enter Your Full Name" id="password" required>
+                <h5>Password must be at least 8 characters long with 1 Uppercase, 1 Lowercase & 1 Numeric character.</h5>
+              <a  href="">  <input id="btn" type="submit" value="CONTINUE">  </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+document.getElementById("form").addEventListener("submit",signIn)
+arr=JSON.parse(localStorage.getItem("signIn"))
+function signIn(event){
+event.preventDefault()
+// console.log("here");
+myObj={
+name:form.name.value,
+mobile:form.mobile.value,
+email:form.email.value,
+password:form.password.value,
+}
+
+// console.log(myObj)
+
+arr.push(myObj)
+localStorage.setItem("signIn",JSON.stringify(arr))
+alert("thank you")
+window.location.href="login.html"
+}
+
+</script>
