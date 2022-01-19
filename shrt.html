@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7fc6a624dd.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            width: 78%;
+            height: 1000px;
+            border: 1px solid red;
+            margin: auto;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            background-color: white;
+            display: flex;
+        }
+        #bx1{
+            width: 300px;
+            height: 100%;
+            border: 1px solid green;
+        }
+        #bx2{
+            width: 900px;
+            height: 100%;
+            border: 1px solid orange;
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 350px 350px 350px;
+            grid-gap: 10px;
+        }
+        #tit{
+            font-family: Arial;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #gd{
+            border: 1px solid blue;
+        }
+        #bx0{
+            width: 900px;
+            height: 100%;
+            /* border: 1px solid blue; */
+            margin-left: 20px;
+            /* display: flex; */
+            /* display: grid; */
+            /* grid-template-columns: 270px 270px 270px;
+            grid-template-rows: 350px 350px 350px;
+            grid-gap: 10px; */
+        }
+        #bx3{
+            width: 850px;
+            /* height: 100%; */
+            /* border: 1px solid gray; */
+            display: grid; 
+            grid-template-columns: 270px 270px 270px;
+            grid-template-rows: 440px 440px;
+            grid-gap: 20px;
+        }
+        #bx3>div>img{
+            width: 100%;
+            height: 70%;
+        }
+        /* #bx3>div{
+            border: 1px solid red;
+        } */
+        #bx3>div>p{
+          /* margin-left: 10px; */
+          margin-right: 10px;
+          font-family: Arial - 400;
+          font-size: 15px;
+          font-weight: 400;
+        }
+        /* #bx3>div>div{
+            justify-content: space-between;
+        } */
+        #bx3>div>div>button{
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+            border: 0px;
+            font-family:Arial - 400;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        #clr{
+            font-family: Arial;
+            font-weight: 200;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        #clr:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #prd{
+            margin-right: 595px;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://cdn.fcglcdn.com/brainbees/images/n/main-bg.jpg)">
+    <div id="container">
+        <div id="bx1">
+            
+        </div>
+        <div id="bx0">
+            <div id="tit">
+                <div>My Shortlist</div>
+                <div id="prd"></div>
+                <div id="clr">Clear All</div>
+            </div>
+            <hr>
+            <div id="bx3">
+                <!-- <div></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem("productListt"));
+    // <i class="fas fa-trash-alt"></i>
+    var count = 0;
+
+
+    data.map((el,index)=>{
+        count++;
+        let{name,price,image}=el;
+        var div = document.createElement("div");
+        var divf = document.createElement("div")
+        divf.style.display="flex";
+
+        var img = document.createElement("img");
+        img.src = image;
+
+        var p = document.createElement("p");
+        p.textContent=name;
+
+        var p1 = document.createElement("p");
+        p1.textContent="$  "+price;
+
+        var btn = document.createElement("button")
+        btn.textContent="ADD TO CART"
+        btn.style.background="#ff7043"
+
+
+        var bt = document.createElement("button")
+        bt.innerHTML='<i class="fas fa-trash-alt fa-2x"></i>';
+        bt.style.width="40px"
+        bt.style.marginLeft="15px"
+        bt.style.color="black"
+        bt.addEventListener("click", function(){
+            alert("Do you want to remove this product from your Shortlist?")
+            del(index);               
+        })
+
+        divf.append(btn,bt);
+
+
+        div.append(img,p,p1,divf);
+
+        document.getElementById("bx3").append(div);
+
+        
+    })
+
+    function del(index){
+        data.splice(index,1)
+        localStorage.setItem("productListt", JSON.stringify(data));
+        location.reload();
+    }
+
+    document.getElementById("clr").addEventListener("click", function(){
+        document.getElementById("bx3").innerHTML="";
+        document.getElementById("prd").innerText=(0+" "+"Products");
+    })
+
+    document.getElementById("prd").innerText=(count+" "+"Products");
+
+    if(count==0){
+        document.getElementById("bx3").innerHTML="";
+        var para = document.createElement("p");
+        para.innerText="You have not shortlisted any product yet";
+        para.style.fontSize="16px";
+        
+        document.getElementById("bx3").append(para);
+      
+        }
+
+
+</script>
+
