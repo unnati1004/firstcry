@@ -83,7 +83,8 @@ var arr = [
 ]
 
 localStorage.setItem("productList",JSON.stringify(arr))
-let product= JSON.parse(localStorage.getItem("productList"));
+let product= JSON.parse(localStorage.getItem("productList"))||[];
+items(product);
 console.log(product);
 function items(product){
 product.forEach((elem) => {
@@ -131,5 +132,27 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-items(product)
+
+function sorting(){
+  var val = document.querySelector("#low").value
+  var val = document.querySelector("#high").value
+
+ if(val==true)
+ {
+   document.querySelector("#products").innerHTML="";
+   var sortd = product.sort(function(a,b){
+     return a.price - b.price;
+   });
+   sortd.map(items);
+   items(product);
+ }
+ if(val==true){
+   document.querySelector("#products").innerHTML="";
+   var sortd = product.sort(function(a,b){
+     return b.price - a.price ;
+ });
+ sortd.map(items);
+ items(product);
+}
+}
 
