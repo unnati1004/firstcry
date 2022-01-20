@@ -219,5 +219,5 @@ function cart(data)
 {
   console.log(data);
   cart_item.push(data);
-  localStorage.setItem("cart",JSON.stringify(cart_item));
+  localStorage.setItem("Cart",JSON.stringify(cart_item));
 }
