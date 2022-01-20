@@ -1,12 +1,14 @@
-var data = JSON.parse(localStorage.getItem("productListt"));
+var data = JSON.parse(localStorage.getItem("shortlist"));
+var dt = data[0];
+
     var count = 0;
 
 
-    data.map((el,index)=>{
+    dt.map((el,index)=>{
         count++;
         let{name,price,image}=el;
         var div = document.createElement("div");
-        var divf = document.createElement("div")
+        var divf = document.createElement("div");
         divf.style.display="flex";
 
         var img = document.createElement("img");
@@ -45,8 +47,8 @@ var data = JSON.parse(localStorage.getItem("productListt"));
     })
 
     function del(index){
-        data.splice(index,1)
-        localStorage.setItem("productListt", JSON.stringify(data));
+        dt.splice(index,1)
+        localStorage.setItem("shortlist", JSON.stringify(dt));
         location.reload();
     }
 
@@ -64,5 +66,4 @@ var data = JSON.parse(localStorage.getItem("productListt"));
         para.style.fontSize="16px";
         
         document.getElementById("bx3").append(para);
-      
         }
