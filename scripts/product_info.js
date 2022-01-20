@@ -4,6 +4,8 @@ let data = JSON.parse(localStorage.getItem('single_product'));
 
 let short_btn = document.getElementById('shortlist')
 short_btn.addEventListener('onclick', short_list(data));
+
+
 function short_list(data) {
     console.log(data);
     let shortlist = JSON.parse(localStorage.getItem('shortlist')) || [];
