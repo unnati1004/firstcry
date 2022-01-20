@@ -15,7 +15,7 @@ let data = JSON.parse(localStorage.getItem("shortlist"));
             p.textContent=name;
     
             var p1 = document.createElement("p");
-            p1.textContent=" "+price;
+            p1.textContent="₹ "+price;
     
             var btn = document.createElement("button")
             btn.textContent="ADD TO CART"
