@@ -1,0 +1,114 @@
+#topcart {
+    width: 100%;
+    height: 80px;
+    border: black 1px solid;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#cartphoto {
+    height: 100%;
+}
+
+#selectop {
+    padding-top: 30px;
+    padding-right: 40px;
+
+    border: 1px solid white;
+}
+
+#cartbody {
+    width: 100%;
+    height: 1000px;
+    border: 1px solid black;
+    background-color: #f6f6f6;
+    display: flex;
+}
+
+#cartbodyleft {
+    width: 65%;
+    border: 1px solid black;
+}
+
+#cartbodyright {
+    width: 35%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#cartbodyright>#sbiimg {
+    width: 100%;
+}
+
+#offerimg {
+    background-color: white;
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    padding-left: 20px;
+}
+
+#Accountoption {
+    border: none;
+    outline: none;
+}
+
+#shopping {
+    display: flex;
+    color: red;
+}
+
+#address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgb(187, 168, 168);
+    width: 90%;
+    margin: auto;
+}
+
+#add>input {
+    border: none;
+    height: 60%;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: rgb(255, 245, 245);
+
+}
+
+#address>button {
+    margin-right: 40px;
+    width: 100px;
+    background-color: white;
+    color: red;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-style: solid red 1px;
+}
+
+#add {
+    display: flex;
+}
+#itemsset{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    border: black 1px solid;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#itemsimg{
+    width: 20%;
+    height: 100%;
+    padding-left: 2%;
+    border: black 1px solid;
+}
+#itemsname{
+width: 73%;
+height: 100%;
+border: 1px solid red;
+}
