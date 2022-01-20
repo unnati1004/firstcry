@@ -95,6 +95,7 @@ function items(product) {
     let but1 = document.createElement('button');
     but.textContent = "ADD TO CART"
     but1.textContent = "SHORTLIST"
+    but1.addEventListener('click', short_list())
     div3.setAttribute("class", "overlay");
     but.setAttribute("class", "but");
     but1.setAttribute("class", "but1");
@@ -132,22 +133,29 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 items(product)
-function sorting(){
+function sorting() {
   var val = document.querySelector("#sort").value
- if(val=="low")
- {
-   document.querySelector("#cont").innerHTML="";
-   var sortd = products.sort(function(a,b){
-     return a.price - b.price;
-   });
-   sortd.map(display);
- }
- else{
-   document.querySelector("#cont").innerHTML="";
-   var sortd = products.sort(function(a,b){
-     return b.price - a.price ;
- });
- sortd.map(display);
+  if (val == "low") {
+    document.querySelector("#cont").innerHTML = "";
+    var sortd = products.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    sortd.map(display);
+  }
+  else {
+    document.querySelector("#cont").innerHTML = "";
+    var sortd = products.sort(function (a, b) {
+      return b.price - a.price;
+    });
+    sortd.map(display);
+  }
 }
+let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+
+function short_list(data) {
+  console.log(data);
+  short.push(data);
+  localStorage.setItem('shortlist', JSON.stringify(shortlist));
+
 }
 
