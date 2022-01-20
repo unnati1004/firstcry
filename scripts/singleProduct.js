@@ -93,7 +93,7 @@
 //     }
 // ]
 
-localStorage.setItem("productList", JSON.stringify(arr))
+// localStorage.setItem("productList", JSON.stringify(arr))
 let data = JSON.parse(localStorage.getItem('single_product'));
 
 let short_btn = document.getElementById('shortlist')
@@ -111,25 +111,25 @@ function Display_img() {
 
     let div1 = document.createElement('div');
     let img1 = document.createElement('img')
-    img1.src = data[0].image
+    img1.src = data.image
     div1.append(img1);
     img1.addEventListener('click', right_img)
 
     let div2 = document.createElement('div');
     let img2 = document.createElement('img')
-    img2.src = data[0].image1
+    img2.src = data.image1
     div2.append(img2);
     img2.addEventListener('click', right_img)
 
     let div3 = document.createElement('div');
     let img3 = document.createElement('img')
-    img3.src = data[0].image2
+    img3.src = data.image2
     div3.append(img3);
     img3.addEventListener('click', right_img)
 
     let div4 = document.createElement('div');
     let img4 = document.createElement('img')
-    img4.src = data[0].image3
+    img4.src = data.image3
     div4.append(img4);
     img4.addEventListener('click', right_img)
 
@@ -224,10 +224,10 @@ function Display_img() {
 
 
     let heading = document.getElementById('heading');
-    heading.innerText = data[0].name;
+    heading.innerText = data.name;
 
     let price = document.getElementById('price');
-    price.innerHTML = "₹ " + data[0].price
+    price.innerHTML = "₹ " + data.price
 
     // right.append(heading);
 }
