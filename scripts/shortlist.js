@@ -1,4 +1,4 @@
-var data = JSON.parse(localStorage.getItem("productListt"));
+var data = JSON.parse(localStorage.getItem("shortlist"));
     var count = 0;
 
 

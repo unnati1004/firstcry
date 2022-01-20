@@ -9,7 +9,7 @@ function short_list(data) {
     let shortlist = JSON.parse(localStorage.getItem('shortlist')) || [];
     shortlist.push(data);
     localStorage.setItem('shortlist', JSON.stringify(shortlist));
-
+    
 }
 function Display_img() {
 
