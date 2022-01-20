@@ -85,6 +85,8 @@ var arr = [
 localStorage.setItem("productList", JSON.stringify(arr))
 let product = JSON.parse(localStorage.getItem("productList"))||[];
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+let cart_item = JSON.parse(localStorage.getItem('cart')) || [];
+
 console.log(product);
 function items(product) {
   product.forEach((elem) => {
@@ -98,6 +100,10 @@ function items(product) {
     but1.textContent = "SHORTLIST"
     but1.addEventListener('click', ()=>{
       short_list(elem);
+    })
+    but.addEventListener('click', ()=>{
+      cart(elem);
+      
     })
     div3.setAttribute("class", "overlay");
     but.setAttribute("class", "but");
@@ -159,6 +165,11 @@ function short_list(data) {
   console.log(data);
   short.push(data);
   localStorage.setItem('shortlist', JSON.stringify(short));
-
 }
 
+function cart(data)
+{
+  console.log(data);
+  cart_item.push(data);
+  localStorage.setItem("cart",JSON.stringify(cart_item));
+}
