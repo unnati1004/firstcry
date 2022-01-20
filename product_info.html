@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b71f640908.js" crossorigin="anonymous"></script>
+    <title>firstcry</title>
+    <link rel="stylesheet" href="./styles/product_info.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="product_main">
+            <div id="left">
+                <div id="left_image">
+                    <div id="small_img"></div>
+                    <div id="big_img">
+                    </div>
+                </div>
+                <div id="btn"><button id="add_cart" onclick="">ADD TO CART</button>
+                    <button id="shortlist"><i class="far fa-heart"></i> SHORTLIST</button>
+                </div>
+            </div>
+
+            <div id="right">
+                <div>
+                    <h3 id="heading"></h3>
+                    <span style="font-size: small;padding-bottom: 10px;">
+                        <p>6 to 12 Months, (Size Large), Snug round neck T-shirt with shoulder snap button closure for
+                            boys
+                            Product ID: 10393343</p>
+                    </span>
+
+                </div>
+                <div>
+                    <p id=price></p>
+                    <span style="font-size: small;margin-top: 5px;">
+                        <p>MRP incl. all taxes</p>
+                    </span>
+                    <p class="sub">Color
+                        <button class="color" id="first_color" style="background-color: indigo;"></button>
+                        <button class="color" style="background-color: red;"></button>
+                        <button class="color" style="background-color: blue;"></button>
+                    </p>
+                    <div id="size">
+                        <div class="size sub" style="border: none;">Size</div>
+                        <div class="size" style="border: solid 2px rgb(37, 37, 37);"> 3 - 6 M</div>
+                        <div class="size"> 6 - 12 M</div>
+                        <div class="size"> 12 - 18 M</div>
+                        <div class="size"> 18 - 24 M</div>
+                    </div>
+
+                </div>
+                <div>
+                    <p class="sub">FIRSTCRY CLUB BENEFITS</p>
+                    <div id="club_benefits">
+                        <div><img src="https://cdn.fcglcdn.com/brainbees/images/club_member.webp" />
+                            <p>Exclusive Offers & Discounts</p>
+                        </div>
+                        <div><img src="https://cdn.fcglcdn.com/brainbees/images/price_benefit_member.webp">
+                            <p>Lower price on products</p>
+                        </div>
+                        <div><img src="https://cdn.fcglcdn.com/brainbees/images/earn_loyalty_cash.webp">
+                            <p>Loyalty Cash Points</p>
+                        </div>
+                        <div><img src="https://cdn.fcglcdn.com/brainbees/images/baby_gear_assembly.webp">
+                            <p>Free baby gear assembly</p>
+                        </div>
+                        <div><img src="https://cdn.fcglcdn.com/brainbees/images/lower_shipping_barrier.webp">
+                            <p>Lower shipping barrier</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <p class="sub"><i class="fas fa-shipping-fast"></i> CHECK DELIVERY DETAILS [?]</p>
+                    <input type="text" placeholder="Enter Pinecode" style="width:200px;height:20px" />
+                    <p style="font-size: 15px;">Same Day/Next Day delivery applicable on this product. Enter pincode to
+                        check availability in
+                        your area.</p>
+                </div>
+                <div>
+                    <div style="display:flex;justify-content: space-between; width:50%;">
+                        <p class="sub">SIZE & FIT INFORMATION</p>
+                        <p class="sub">CM</p>
+                    </div>
+                    <div class="size_fit">
+                        <p>Age</p>
+                        <p>3 - 6 M</p>
+                    </div>
+                    <div class="size_fit">
+                        <p>Shoulder</p>
+                        <p>20 cm</p>
+                    </div>
+                    <div class="size_fit">
+                        <p>Length for Top</p>
+                        <p>32 cm</p>
+                    </div>
+                    <div class="size_fit">
+                        <p>Sleeve</p>
+                        <p>10 cm</p>
+                    </div>
+                    <div class="size_fit">
+                        <p>Chest</p>
+                        <p>24 cm</p>
+                    </div>
+
+                </div>
+                <div>
+                    <p class="sub">PRODUCT DESCRIPTION</p>
+                    <p style="font-weight: bold;">Specifications:</p>
+                    <p>Brand - Zero</p>
+                    <p>Type - T-Shirt</p>
+                    <p>Fabric - Cotton/Knit</p>
+                    <p>Sleeves - Half Sleeves</p>
+                    <p>Neck - Round Neck</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="sub">
+                YOU MAY ALSO LIKE
+            </p>
+            <div id="like"></div>
+        </div>
+        <div>
+            <p class="sub">
+                FREQUENTLY BOUGHT TOGETHER
+            </p>
+            <div id="freq"></div>
+        </div>
+        <div>
+            <div>
+                <p class="sub">FEEDBACK</p>
+                <p>Tell us if we missed any relevant information on the products?</p>
+            </div>
+            <div>
+                <input type="text" style="height:35px;width:600px;"
+                    placeholder="e.g Product weight,Dimensions,MAterial etc" />
+                <button
+                    style="width:100px;height:37px;background-color: #2979ff;border:none;color:white;font-weight: 500;font-size: medium;">Submit</button>
+            </div>
+            <div id="related_links"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./scripts/product_info.js"></script>
