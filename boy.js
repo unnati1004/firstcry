@@ -112,7 +112,7 @@ function items(product) {
     div2.append(div, div1, div3);
     div2.addEventListener('click', () => {
       localStorage.setItem('single_product', JSON.stringify(elem));
-      window.location.href = "./singlepage.html";
+      window.location.href = "./product_info.html";
     })
     document.getElementById("products").append(div2);
   });
