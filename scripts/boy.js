@@ -132,9 +132,9 @@ function items(product) {
      div.append(img);
      div1.append(h,p);
      div2.append(div,div1,div3);
-     div2.addEventListener('click',()=>{
+     img.addEventListener('click',()=>{
       localStorage.setItem('single_product', JSON.stringify(elem));
-        // window.location.href="./data.html";
+        window.location.href="./product_info.html";
      })
      document.getElementById("products").append(div2);
 });
