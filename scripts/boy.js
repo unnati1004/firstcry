@@ -135,7 +135,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-items(product)
+items(product);
 function sorting() {
   var val = document.querySelector("#sort").value
   if (val == "low") {
