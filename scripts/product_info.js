@@ -3,13 +3,15 @@
 let data = JSON.parse(localStorage.getItem('single_product'));
 
 let short_btn = document.getElementById('shortlist')
+
 short_btn.addEventListener('onclick', short_list(data));
+let shortlist = JSON.parse(localStorage.getItem('shortlist')) || [];
+
 function short_list(data) {
     console.log(data);
-    let shortlist = JSON.parse(localStorage.getItem('shortlist')) || [];
     shortlist.push(data);
     localStorage.setItem('shortlist', JSON.stringify(shortlist));
-    
+
 }
 function Display_img() {
 
