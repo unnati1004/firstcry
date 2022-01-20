@@ -120,17 +120,17 @@
             justify-content: space-evenly;
             
         }
-        #tbtn>button{
+        #tbtn>input{
             padding: 8px 55px;
             border: 0px;
             border-radius: 6px;
         }
-        #tbtn>button:nth-child(2){
+        #tbtn>#save:nth-child(2){
             background-color: #ff7167;
             color: white;
             font-weight: bold;
         }
-        #tbtn>button:nth-child(1){
+        #tbtn>#cancel:nth-child(1){
             background-color: rgb(185, 177, 177);
             color: white;
             font-weight: bold;
@@ -157,7 +157,7 @@
 </div>
 <hr>
 <div class="inputd">
-
+<form id="form">
     <input type="text" placeholder="Pincode*" required>
 
     <input type="text" placeholder="City*" required>
@@ -188,12 +188,15 @@
     </div>
 
     <div id="tbtn">
-        <button>CANCEL</button>
-        <button>SAVE ADDRESS</button>
+        <input id="cancel" type="submit" value="CANCEL">
+        <input id="save" type="submit" value="SAVE ADDRESS">
+
+        <!-- <button>CANCEL</button> -->
+        <!-- <button onclick="btn1()">SAVE ADDRESS</button> -->
     </div>
 
         </div>
-      
+    </form>
     </div>
 </body>
 </html>
@@ -202,9 +205,20 @@
     let divTag=document.getElementById("main")
     function myFn(event){
         event.preventDefault()
-        console.log("here");
+        
        
      
         divTag.innerHTML=""
     }
+
+
+    document.getElementById("form").addEventListener("submit",saveFn)
+
+    function saveFn(event){
+        event.preventDefault()
+        alert("Thank You So Much Your delivery will be commming in this address")
+    }
+
+
+    
 </script>
