@@ -11,6 +11,7 @@
             height: 630px;
             /* border: 1px solid black; */
         float: right;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
            
    
 
@@ -135,6 +136,26 @@
             color: white;
             font-weight: bold;
         }
+        #house{
+            margin-top: 30px;
+            width: 90%;
+            height: 25px;
+            border: none;
+            border-bottom: 1px solid gray;
+            outline: none;
+            /* padding-left: 10px; */
+            margin-left: 20px;
+        }
+        #area{
+            margin-top: 30px;
+            width: 90%;
+            height: 25px;
+            border: none;
+            border-bottom: 1px solid gray;
+            outline: none;
+            /* padding-left: 10px; */
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -151,19 +172,19 @@
 
 <div class="inputd">
 
-    <input type="text" placeholder="Mobile No." required>
+    <input type="text" placeholder="Mobile No." id="mobile" required>
 
     <input type="text" placeholder="Alternate No.(Optional)" >
 </div>
 <hr>
 <div class="inputd">
 <form id="form">
-    <input type="text" placeholder="Pincode*" required>
+    <input type="text" placeholder="Pincode*" id="pin" required>
 
-    <input type="text" placeholder="City*" required>
+    <input type="text" placeholder="City*" id="city" required>
 </div>
-<input type="text" placeholder="Flat/House No./Building*" id="name" required>
-<input type="text" placeholder="Area/Locality*" id="name" required>
+<input type="text" placeholder="Flat/House No./Building*" id="house" required>
+<input type="text" placeholder="Area/Locality*" id="area" required>
 <input type="text" placeholder="Landmark(Optional)" id="name" required>
 
 
@@ -213,10 +234,38 @@
 
 
     document.getElementById("form").addEventListener("submit",saveFn)
-
+// arr=JSON.parse(localStorage.getItem("addres"))||[]
     function saveFn(event){
         event.preventDefault()
-        alert("Thank You So Much Your delivery will be commming in this address")
+
+
+        let name=document.getElementById("name").value;
+        let mobile=document.getElementById("mobile").value;
+        let pin=document.getElementById("pin").value;
+        let city=document.getElementById("city").value;
+        let house=document.getElementById("house").value;
+        let area=document.getElementById("area").value;
+
+// console.log(name,mobile,pin,city,house,area);
+
+myObj={
+    name:name,
+    mobile:mobile,
+    pin:pin,
+    city:city,
+    house:house,
+    area:area,
+}
+
+// arr.push(myObj)
+localStorage.setItem("addres",JSON.stringify(myObj))
+window.location.href="addres2.html"
+
+// console.log(myObj);
+
+
+
+        // alert("Thank You So Much Your delivery will be commming in this address")
     }
 
 
