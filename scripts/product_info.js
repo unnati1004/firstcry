@@ -4,13 +4,24 @@ let data = JSON.parse(localStorage.getItem('single_product'));
 
 let short_btn = document.getElementById('shortlist')
 
+let add_cart = document.getElementById('add_cart')
+
+add_cart.addEventListener('onclick', to_cart);
+
+function to_cart() {
+    let Cart = JSON.parse(localStorage.getItem('Cart')) || [];
+    Cart.push(data);
+    localStorage.setItem('Cart', JSON.stringify(Cart))
+}
+
+
 short_btn.addEventListener('onclick', short_list);
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 
 function short_list(data) {
     console.log(data);
     short.push(data);
-    localStorage.setItem('shortlist', JSON.stringify(shortlist));
+    localStorage.setItem('shortlist', JSON.stringify(short));
 
 }
 function Display_img() {
