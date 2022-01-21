@@ -12,6 +12,7 @@
 
 <body>
     <div id="main">
+        <div id="navbar"></div>
         <div id="product_main">
             <div id="left">
                 <div id="left_image">
@@ -185,4 +186,7 @@
 </body>
 
 </html>
-<script src="./scripts/product_info.js"></script>
+<script type="module" src="./scripts/product_info.js">
+    import navbar from "./components/navbar.js"
+    console.log(navbar);
+</script>
