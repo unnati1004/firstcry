@@ -8,10 +8,7 @@
 
  ];
 
- function controler(x){
-    flag=flag+x;
-    slideshow(flag);
- }
+ 
  slideshow(flag);
  function slideshow(num){
      let div =document.getElementById("slide-container");
