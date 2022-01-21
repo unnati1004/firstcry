@@ -16,7 +16,7 @@ var data = JSON.parse(localStorage.getItem("shortlist"));
         p.textContent=name;
 
         var p1 = document.createElement("p");
-        p1.textContent="$  "+price;
+        p1.textContent="₹  "+price;
 
         var btn = document.createElement("button")
         btn.textContent="ADD TO CART"
@@ -35,8 +35,7 @@ var data = JSON.parse(localStorage.getItem("shortlist"));
         })
 
         divf.append(btn,bt);
-
-
+        
         div.append(img,p,p1,divf);
 
         document.getElementById("bx3").append(div);
