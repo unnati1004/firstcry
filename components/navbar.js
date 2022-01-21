@@ -154,7 +154,7 @@ function navbar() {
                 </div>
             </div>
         </li>
-        <div id="rotate">></div>
+        <div id="rotate"></div>
 
         <li>BOY FASHION
             <div class="megamenu">
