@@ -4,80 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/cvv.css">
     <title>Document</title>
-    <style>
-      #cvvmain {
-        width: 35%;
-        height: 550px;
-        /* border: 1px solid black; */
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin: auto;
-      }
-      #main2 {
-        width: 80%;
-        height: 90%;
-        /* border: 1px solid red; */
-        margin: auto;
-        margin-top: 20px;
-      }
-      .text1 {
-        margin-top: 20px;
-        margin-left: 20px;
-        line-height: 35px;
-        font-size: 25px;
-      }
-      .text1 > div:nth-child(2) {
-        color: #188000;
-        font-weight: 700;
-        font-family: sans-serif;
-      }
-      .text1 > div:nth-child(1) {
-        color: #cfd6dc;
-        font-weight: 700;
-        font-family: sans-serif;
-      }
-      .imgflex {
-        margin-top: 20px;
-      }
-      .card {
-        width: 90%;
-        height: 40px;
-        /* border: 1px solid red; */
-        margin-left: 20px;
-        margin-top: 10px;
-        background-color: #f1f3f5;
-        outline: none;
-        border: 0px;
-      }
-      .card > input {
-        margin: 10px;
-        outline: none;
-        background-color: #f1f3f5;
-        border: 0px;
-      }
-      .flex1 {
-        display: flex;
-        margin-top: 20px;
-        margin-left: 5px;
-        gap: 10px;
-        height: 30px;
-      }
-      .flex1 > input {
-        outline: none;
-        background-color: #f1f3f5;
-        border: 0px;
-      }
-      #submitsave {
-        margin-top: 20px;
-        margin-left: 22px;
-        padding: 10px 150px;
-        background-color: #2ca85e;
-        color: white;
-        border: 0px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
-    </style>
+   
   </head>
   <body>
     <div id="cvvmain">
@@ -123,23 +52,6 @@
     </div>
   </body>
 </html>
-<script>
-  document.getElementById("form").addEventListener("submit", cvvFn);
+<script src="./taruScripts/cvv.js">
 
-  function cvvFn(event) {
-    event.preventDefault();
-    console.log("here");
-
-    let cart = document.getElementById("cartno").value;
-    let cvv = document.getElementById("cvv").value;
-
-    alert("we are Processing just a seconde plz");
-    setTimeout(() => {
-      if (cart == 123456789 && cvv == 799) {
-        alert("thank you your odrer will be deliverd soon");
-      } else {
-        alert("sorry something some went wrong");
-      }
-    }, 1000);
-  }
 </script>
