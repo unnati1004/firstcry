@@ -64,7 +64,9 @@
            font-size: 15px;
            line-height: 10px;
            font-family: sans-serif;
+           font-weight: bold;
        }
+       
        #tcheckbox{
             display: flex;
             /* border: 1px solid red; */
@@ -89,7 +91,7 @@
         }
         #del2{
             display: flex;
-            gap: 10px;
+            gap: 20px;
             align-items: center;
             padding-right: 15px;
         }
@@ -114,6 +116,9 @@
        h3{
            padding-left: 30px;
        }
+       i{
+      color: #ff7043;
+       }
     </style>
 </head>
 <body>
@@ -123,7 +128,7 @@
             <div >
                <a  id="tid" href=""> &#x2716;</a>
             </div>
-           
+      
         </div>
 <div>
   <a href="addres.html">  <h3>+ Add New Address</h3></a>
@@ -132,11 +137,12 @@
 <div id="tlocal">
     <div id="del">
 <div>
-  <a href="">Home</a>
+  <a href=""><i class="fas fa-home fa-2x"></i></a>
 </div>
 <div id="del2">
-<a href="" id="delfile">   <div>Delete</div></a>
-   <a href=""><div>Edit</div></a>
+<a href="" >   <div> <i class="fas fa-pencil-alt fa-lg"></i></div></a>
+   <a href="addres.html" id="delfile"><div><i class="fas fa-trash-alt fa-lg"></i></div></a>
+  
 </div>
     </div>
 <div id="tlocal1"></div>
@@ -220,13 +226,13 @@ function btnFn(){
 }
 
 
-document.getElementById("delfile").addEventListener("click",delfil)
-function delfil(index){
-    alert("sa")
-
-
-
+document.getElementById("delfile").addEventListener("click",delF)
+function delF(){
+    alert("are u sure You want to Delete This")
+    
 
 }
+
+
     
 </script>
