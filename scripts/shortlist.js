@@ -50,7 +50,10 @@ var data = JSON.parse(localStorage.getItem("shortlist"));
         location.reload();
     }
     document.getElementById("clr").addEventListener("click", function(){
+        data = [];
+        localStorage.setItem("shortlist",JSON.stringify(data));
         document.getElementById("bx3").innerHTML="";
+
         document.getElementById("prd").innerText=(0+" "+"Products");
     })
 
