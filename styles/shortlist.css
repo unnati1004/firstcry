@@ -49,6 +49,7 @@
 }
 #bx3 {
   width: 850px;
+  margin-top: 20px;
   /* height: 100%; */
   /* border: 1px solid gray; */
   display: grid;
@@ -66,9 +67,13 @@
 #bx3 > div > p {
   /* margin-left: 10px; */
   margin-right: 10px;
+  margin-top: 10px;
   font-family: Arial - 400;
   font-size: 15px;
   font-weight: 400;
+}
+#bx3 > div > div > button {
+  margin-top: 10px;
 }
 /* #bx3>div>div{
     justify-content: space-between;
