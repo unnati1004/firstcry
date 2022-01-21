@@ -26,8 +26,7 @@ data.map((el, index) => {
     var bttsl = document.createElement("button")
     bttsl.textContent = "MOVE TO SHORTLIST"
     bttsl.addEventListener("click", function () {
-        short.push(el)
-        localStorage.setItem("shortlist", JSON.stringify(short))
+        short_list(el)
         remove(el)
     })
 
@@ -62,3 +61,22 @@ function remove(elm) {
     location.reload()
 }
 
+function short_list(data) {
+    // console.log(data);
+    if (short.length === 0) {
+        short.push(data);
+        localStorage.setItem('shortlist', JSON.stringify(short));
+    }
+    else {
+        let c = 0;
+        for (let i = 0; i < short.length; i++) {
+            if (short[i].image === data.image) {
+                console.log(++c);
+            }
+        }
+        if (c === 0) {
+            short.push(data);
+            localStorage.setItem('shortlist', JSON.stringify(short));
+        }
+    }
+}
