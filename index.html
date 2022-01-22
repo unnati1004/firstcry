@@ -216,6 +216,7 @@
             <img src="https://cdn.fcglcdn.com/brainbees/images/intellitots-franchise-desktop-bottom-banner.jpg" alt="">
         </div>
     </div>
+    <div id="footer"></div>
     <script src="./scripts/slider.js"> </script>
 </body>
 </html>
@@ -224,4 +225,7 @@
     let container=document.getElementById("container");
     container.innerHTML=navbar();
     
+    import navbar from "./components/footer.js";
+    let footer=document.getElementById("footer");
+    footer.innerHTML=footer();
 </script>
