@@ -45,7 +45,7 @@ function navbar(){
 <div id="megabar">
  <nav class="nav-bar">
     <ul>
-        <li>ALL CATEGORIES 
+        <li>ALL CATEGORIES <div id="rotate">></div>
             <div class="megamenu">
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
@@ -154,7 +154,7 @@ function navbar(){
                 </div>
             </div>
         </li>
-        <div id="rotate">></div>
+        
 
         <li>BOY FASHION
             <div class="megamenu">

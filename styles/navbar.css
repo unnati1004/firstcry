@@ -153,9 +153,11 @@ ul>li:nth-child(2){
     margin-left: 15px;
 }
 #rotate{
+    display: inline-block;
     transform: rotate(90deg);
     margin-left: 7px;
-    display: block;
+   
+
 }
 li:hover{
     background-color: white;
