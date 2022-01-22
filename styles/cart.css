@@ -6,7 +6,9 @@
     justify-content: space-between;
 
 }
-
+#address>button{
+    border-color: red;
+}
 #cartphoto {
     height: 100%;
 }
@@ -24,6 +26,7 @@
     /* border: 1px solid black; */
     background-color: #f6f6f6;
     display: flex;
+    flex-direction: row;
 }
 
 #cartbodyleft {
@@ -36,6 +39,7 @@
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
+    
 }
 
 #cartbodyright>#sbiimg {
@@ -68,6 +72,7 @@
     border: 1px solid rgb(187, 168, 168);
     width: 90%;
     margin: auto;
+    
 }
 
 #add>input {
@@ -95,19 +100,21 @@
 }
 #itemsset{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 180px;
-    border: black 1px solid;
     margin-top: 20px;
     justify-content: space-between;
 }
-#itemsimg{
-    width: 20%;
-    height: 100%;
+#imgitems{
+    width: 200px;
+    height: 200px;
     padding-left: 2%;
 <<<<<<< Updated upstream
     border: black 1px solid;
+    margin-left: 50px;
 }
+<<<<<<< HEAD
 #itemsname{
 width: 73%;
 height: 100%;
@@ -116,6 +123,8 @@ border: 1px solid red;
     /* border: black 1px solid; */
     margin-left: 50px;
 }
+=======
+>>>>>>> main
 
 #div2{
     margin-left: 20px;
@@ -148,6 +157,7 @@ padding-right: 20px;
     color: red;
     border-color: red;
     margin-left: 30px;
+<<<<<<< HEAD
 }
 #bttdet>button{
    border: none;
@@ -168,4 +178,6 @@ padding-right: 20px;
     padding-right: 120px;
     padding-left: 40px;
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
 }
