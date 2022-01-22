@@ -147,3 +147,10 @@ p{
     display: flex;
     justify-content: space-between;
 }
+#line
+{
+    width: 100%;
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
