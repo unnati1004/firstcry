@@ -1,0 +1,371 @@
+#container {
+  width: 78%;
+  height: 1000px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: white;
+  display: flex;
+}
+#bx1 {
+  width: 250px;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+#bx2 {
+  width: 900px;
+  height: 100%;
+  border: 1px solid orange;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 350px 350px 350px;
+  grid-gap: 10px;
+  /* background: transparent; */
+}
+#tit {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#gd {
+  border: 1px solid blue;
+}
+#bx0 {
+  width: 900px;
+  height: 100%;
+  /* border: 1px solid blue; */
+  margin-left: 20px;
+  /* display: flex; */
+  /* display: grid; */
+  /* grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 350px 350px 350px;
+    grid-gap: 10px; */
+}
+#bx3 {
+  width: 850px;
+  margin-top: 20px;
+  /* height: 100%; */
+  /* border: 1px solid gray; */
+  display: grid;
+  grid-template-columns: 270px 270px 270px;
+  grid-template-rows: 440px 440px;
+  grid-gap: 20px;
+}
+#bx3 > div > img {
+  width: 100%;
+  height: 70%;
+}
+/* #bx3>div{
+    border: 1px solid red;
+} */
+#bx3 > div > p {
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  margin-top: 10px;
+  font-family: Arial - 400;
+  font-size: 15px;
+  font-weight: 400;
+}
+#bx3 > div > div > button {
+  margin-top: 10px;
+}
+/* #bx3>div>div{
+    justify-content: space-between;
+} */
+#bx3 > div > div > button {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+  font-family: Arial - 400;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+#clr {
+  font-family: Arial;
+  font-weight: 200;
+  font-size: 15px;
+  margin-right: 10px;
+}
+#clr:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#prd {
+  margin-right: 650px;
+  font-size: 12px;
+  margin-top: 6px;
+}
+#t {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#t1 {
+  /* font-family: Arial;
+    
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+   color: #575757;
+   background-color: #f4f4f4; */
+
+  width: 95%;
+  height: 40px;
+  border: 1px solid #f4f4f4;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #f4f4f4;
+}
+#t1 > p {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 16px;
+  color: #575757;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#btt {
+  width: 93%;
+  /* height: 120px; */
+  /* border: 1px solid rebeccapurple; */
+  margin-top: 10px;
+  margin-left: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #575757;
+  font-size: 12px;
+  cursor: pointer;
+}
+#btt > hr {
+  border-top: 1px dotted;
+}
+#btt > div {
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap"); */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#topNav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+/* #topNav > div {
+} */
+.logo {
+  width: 12%;
+}
+
+#topNav > div > img {
+  height: 75%;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.searchBar {
+  border: 1px solid grey;
+  width: 25%;
+  height: 55%;
+  margin-top: 15px;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 15px;
+  border: transparent;
+}
+.searchBar > input {
+  width: 80%;
+
+  font-size: 13px;
+  margin-left: 5px;
+  border: 1px solid white;
+  outline: none;
+}
+.searchBar > span {
+  font-size: 12px;
+  color: blue;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+#cross {
+  margin-left: 8px;
+  visibility: hidden;
+}
+.searchBar:hover {
+  border: 1px solid red;
+}
+.searchBar:hover > #cross {
+  visibility: visible;
+}
+.Iconsearch {
+  width: 15px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.manuNav {
+  width: 60%;
+  display: flex;
+  margin-left: 60px;
+}
+.manuNav > div {
+  font-size: 11px;
+  margin-top: 17px;
+  height: 30%;
+  border-right: 1.5px solid gray;
+  padding-right: 8px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #575757;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.Iconlocation {
+  height: 25px;
+  width: 25px;
+}
+.Iconp {
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+}
+#cart {
+  font-size: 12px;
+}
+#carticon {
+  border: none;
+}
+
+/* megabar */
+
+#megabar {
+  width: 100%;
+  height: 60px;
+
+  background-color: #ffd91c;
+}
+#megabar > nav > ul {
+  display: flex;
+  margin-top: 10px;
+}
+li {
+  font-size: 14px;
+  font-weight: 600;
+  /* margin-left: 20px; */
+
+  color: #575757;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul > li:nth-child(1) {
+  margin-left: 20px;
+}
+ul > li:nth-child(2) {
+  margin-left: 15px;
+}
+#rotate {
+  transform: rotate(90deg);
+  margin-left: 7px;
+  display: block;
+}
+li:hover {
+  background-color: white;
+}
+
+.megamenu {
+  position: absolute;
+  top: 122px;
+  left: 0;
+  width: 99%;
+  margin: auto;
+  height: 550px;
+  background-color: white;
+  transition: all 0.4s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px #888;
+  display: none;
+  margin-left: 10px;
+}
+.inner-megamenu {
+  width: auto;
+  margin-left: 10px;
+  text-align: left;
+  padding-right: 20px;
+  height: 550px;
+  background-color: white;
+}
+.nav-bar ul li:hover .megamenu {
+  display: flex;
+  z-index: 1;
+}
+.inner-megamenu > img {
+  width: 300px;
+  height: 300px;
+}
+.nav-bar ul li:nth-child(1):hover .megamenu {
+  position: absolute;
+  top: 61px;
+  left: 0;
+}
+.inner-megamenu > p:nth-child(1) {
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+.megamenu:last-child {
+  overflow-y: scroll;
+}
+#head {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  color: #050c12;
+}
+.inner-megamenu > p > a {
+  color: gray;
+  font-size: 12px;
+}
+.inner-megamenu > p > a:hover {
+  color: #575757;
+}
+#img1 {
+  width: 60px;
+  height: 20px;
+  margin-top: 20px;
+}
+#img {
+  margin-top: 0;
+  height: 58px;
+  width: 80px;
+  margin-left: 10px;
+}
+

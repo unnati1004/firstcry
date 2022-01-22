@@ -1,0 +1,23 @@
+#maincont {
+  
+    width: 96%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+#headline1 {
+    padding-left: 10px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#maincont>div {
+    text-align: center;
+}
+
+#firstdiscount {
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+}
