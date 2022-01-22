@@ -41,8 +41,10 @@ p{
     background-color: #dbd9d9;
     color: black;
     /* border: solid; */
-    width: 100px;
+    width: 150px;
     padding:7px;
+    display: flex;
+    justify-content: space-between;
 }
 #products{
     /* border: 1px solid black; */
@@ -141,7 +143,7 @@ p{
 }
 #right{
     width: 100%;
-    border: solid;
+    /* border: solid; */
     display: flex;
     justify-content: space-between;
 }
