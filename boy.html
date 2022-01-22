@@ -18,14 +18,7 @@
     <div id="main">
 
         <div id="left">
-            <div id="filter">FILTER BY</div>
-            <div id='sorting'>
-                <select  id="sort" onchange="sorting()">
-                    <option value="">sort by: price</option>
-                    <option value="high">hightolow</option>
-                    <option value="low">lowtohigh</option>
-                  </select>
-            </div>
+                <div id="filter">FILTER BY</div>
             <div id="data">
                 <div id="clothes">
                     <h4>CLOTHES & SHOES</h4>
@@ -39,8 +32,8 @@
                 <!-- <br></br> -->
                 <div id="brands">
                     <h4 class="collapse">SHORT BY</h4>
-                    <div class="content" >
-                        <div><input type="radio" id="low" value="low" name="price" > LOW TO HIGH</div>
+                    <div class="content">
+                        <div><input type="radio" id="low" value="low" name="price"> LOW TO HIGH</div>
                         <div><input type="radio" id="high" value="high" name="price"> HIGH TO LOW</div>
                     </div>
                 </div>
@@ -96,7 +89,19 @@
                 </div>
             </div>
         </div>
-        <div id="products" class="zoom"></div>
+
+        <div>
+            <div id='sorting'>
+                <select id="sort" onchange="sorting()">
+                    <option value="">sort by: price</option>
+                    <option value="high">hightolow</option>
+                    <option value="low">lowtohigh</option>
+                </select>
+            </div>
+            <div id="products" class="zoom">
+               
+            </div>
+        </div>
     </div>
 
 </body>
@@ -105,6 +110,6 @@
 <script src="./scripts/boy.js"></script>
 <script type="module">
     import navbar from "./components/navbar.js";
-    let container=document.getElementById("container");
-    container.innerHTML=navbar();
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
 </script>

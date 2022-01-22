@@ -11,12 +11,8 @@ p{
     font-size: 12px;
 }
 #left{
-
-    /* border: 1px solid black; */
-    
-
-    width: 20%;
-
+    /* border: 1px solid black; */   
+     width: 20%;
 }
 #data{
     /* border: 1px solid black; */
@@ -114,10 +110,7 @@ p{
 .overlay {
   /* position: absolute;  */
   bottom: 0; 
-  /* background: rgb(235, 231, 231); */
-  /* background: rgba(0, 0, 0, 0.5); Black see-through */
   color: #f1f1f1; 
-  /* height:100% ; */
   /* border: 1px solid black; */
   width: 88%;
   transition: .5s ease;
@@ -146,15 +139,9 @@ p{
    border: 1px solid #e4e4e4 ;
    
 }
-/* border-bottom: solid 0.5px #e4e4e4;
-function typesort() {
-    var sortedarr = [];
-    var type = document.querySelector("#type").value;
-    for (var i = 0; i < dataOfProduct.length; i++) {
-      if (type == dataOfProduct[i].producttype) {
-        sortedarr.push(dataOfProduct[i]);
-      }
-    }
-    displayItems(sortedarr);
-  }
-   */
+#right{
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+}

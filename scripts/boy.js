@@ -163,7 +163,7 @@ function sorting(){
      return a.price - b.price;
    });
    items(product)
-  //  product.map(items);
+  
  }
  else{
    document.querySelector("#products").innerHTML="";
@@ -171,12 +171,9 @@ function sorting(){
      return b.price - a.price ;
  });
  items(product)
-//  product.map(items);
+
 }
 }
-
-
-
 
 function short_list(data) {
   // console.log(data);
