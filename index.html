@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/3ab027f621.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./styles/footer.css">
    <link rel="stylesheet" href="./styles/landingpage.css">
    <link rel="stylesheet" href="./styles/navbar.css">
-   
+   <link rel="stylesheet" href="./styles/mediaqueryesindex.css">
 
 </head>
 <body>
@@ -20,18 +16,7 @@
 
     </div>
     <div id="slide-container">
-        <!-- <div class="slide">
-            <img src="https://cdn.fcglcdn.com/brainbees/banners/test/merch_fashion_REPHP50_default_celebrate_big_savings_150122_2022115175059.webp" alt="">
-        </div>
-        <div class="slide">
-            <img src="https://cdn.fcglcdn.com/brainbees/banners/test/MamyPokoNB_Upto44_DP_HP_994x399_20211218174036.webp" alt="">
-        </div>
-        <div class="slide">
-            <img src="https://cdn.fcglcdn.com/brainbees/banners/test/MKTGN_HP_SOI_AU_18JAN_202211820232.gif" alt="">
-        </div>
-        <div class="slide">
-            <img src="https://cdn.fcglcdn.com/brainbees/banners/test/VaccinationTracker_Desktop_202213142918.webp" alt="">
-        </div> -->
+       
         <span class="arrow prev" onclick="controler(-1)">&#10094;</span>
         <span class="arrow next" onclick="controler(1)">&#10095;</span>
     </div>
@@ -233,15 +218,14 @@
     </div>
     <div id="footer"></div>
     <script src="./scripts/slider.js"> </script>
-
 </body>
 </html>
 <script type="module">
     import navbar from "./components/navbar.js";
     let container=document.getElementById("container");
     container.innerHTML=navbar();
-
-    import footer from "./components/footer.js"
-let containe=document.getElementById("footer");
-    containe.innerHTML=footer();
+    
+    // import navbar from "./components/footer.js";
+    // let footer=document.getElementById("footer");
+    // footer.innerHTML=footer();
 </script>
