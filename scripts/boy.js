@@ -92,7 +92,7 @@ let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 items(product)
 console.log(product);
 function items(product) {
-  product.forEach((elem) => {
+  product.map((elem) => {
 
     let div = document.createElement('div');
     let div1 = document.createElement('div');
@@ -153,31 +153,29 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-// let low = document.getElementById('low');
-// let high = document.getElementById('high');
-// function sorting() {
-//   var val = document.querySelector("#low").value
-//   var val = document.querySelector("#high").value
 
-//   if (val == "low") {
-//     document.querySelector("#products").innerHTML = "";
-//     var sortd = product.sort(function (a, b) {
-//       return a.price - b.price;
-//     });
-//     sortd.map(items);
-//     items(product);
-//   }
-//   if (val == 'high') {
-//     document.querySelector("#products").innerHTML = "";
-//     var sortd = product.sort(function (a, b) {
-//       return b.price - a.price;
-//     });
-//     sortd.map(items);
-//     items(product);
-//   }
-// }
-// items(product);
-// sorting();
+function sorting(){
+  var val = document.querySelector("#sort").value
+ if(val=="low")
+ {
+   document.querySelector("#products").innerHTML="";
+    product.sort(function(a,b){
+     return a.price - b.price;
+   });
+   items(product)
+  //  product.map(items);
+ }
+ else{
+   document.querySelector("#products").innerHTML="";
+    product.sort(function(a,b){
+     return b.price - a.price ;
+ });
+ items(product)
+//  product.map(items);
+}
+}
+
+
 
 
 function short_list(data) {
