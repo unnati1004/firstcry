@@ -8,6 +8,10 @@
    <link rel="stylesheet" href="./styles/landingpage.css">
    <link rel="stylesheet" href="./styles/navbar.css">
    <link rel="stylesheet" href="./styles/mediaqueryesindex.css">
+   <link rel="stylesheet" href="./styles/footer.css">
+   <script src="https://kit.fontawesome.com/3ab027f621.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -226,7 +230,20 @@
     let container=document.getElementById("container");
     container.innerHTML=navbar();
     
-    import navbar from "./components/footer.js";
-    let footer=document.getElementById("footer");
-    footer.innerHTML=footer();
+    import footer from "./components/footer.js";
+    let addft=document.getElementById("footer");
+    addft.innerHTML= footer();
+
+    document.getElementById("login").addEventListener("click",signIn);
+
+    function signIn(){
+        window.location.href="login.html"
+}
+
+document.getElementById("shortlist").addEventListener("click",function(){
+    window.location.href="shortlist.html"
+})
+document.getElementById("carticon").addEventListener("click",function(){
+    window.location.href="sumit.html";
+})
 </script>

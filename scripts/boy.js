@@ -213,6 +213,7 @@ function cart(data) {
     if (c === 0) {
       cart_item.push(data);
       localStorage.setItem("Cart", JSON.stringify(cart_item));
+      
     }
   }
 }
