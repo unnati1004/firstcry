@@ -50,10 +50,13 @@ var sum = 0;
 data.map(function (elem) {
     let { price } = elem;
     sum = sum + (+price)
-    //    document.querySelector("#ttp").innerHTML="Total price is "+ sum;
+    //   document.querySelector("#ttp").innerHTML="Total price is "+ sum;
 })
 console.log(sum.toFixed(2));
-document.getElementById("price_show").textContent = "Rs " + sum;
+document.querySelector(".price_show").textContent = "Rs " + sum.toFixed(2);
+document.querySelector(".price_sho").textContent = "Rs "  + sum.toFixed(2);
+document.querySelector(".price_sh").textContent = "Rs "   + sum.toFixed(2);
+
 
 function remove(elm) {
     data.splice(elm, 1)
@@ -80,3 +83,5 @@ function short_list(data) {
         }
     }
 }
+
+
