@@ -21,10 +21,13 @@ data.map((el, index) => {
     var nm = document.createElement("p");
     nm.textContent = name;
     var btt = document.createElement("button")
-    btt.textContent = "REMOVE"
+    btt.innerHTML ='<i class="fas fa-trash-alt fa-lg"></i>'+ "   "+ " REMOVE"
+    btt.setAttribute("id","btrem")
 
     var bttsl = document.createElement("button")
-    bttsl.textContent = "MOVE TO SHORTLIST"
+    bttsl.innerHTML ='<i class="fa-duotone fa-circle-heart"></i>'+"  "+ "MOVE TO SHORTLIST"
+
+    bttsl.setAttribute("id","btrem")
     bttsl.addEventListener("click", function () {
         short_list(el)
         remove(el)
@@ -50,10 +53,13 @@ var sum = 0;
 data.map(function (elem) {
     let { price } = elem;
     sum = sum + (+price)
-    //    document.querySelector("#ttp").innerHTML="Total price is "+ sum;
+    //   document.querySelector("#ttp").innerHTML="Total price is "+ sum;
 })
 console.log(sum.toFixed(2));
-document.getElementById("price_show").textContent = "Rs " + sum;
+document.querySelector(".price_show").textContent = "Rs " + sum.toFixed(2);
+document.querySelector(".price_sho").textContent = "Rs "  + sum.toFixed(2);
+document.querySelector(".price_sh").textContent = "Rs "   + sum.toFixed(2);
+
 
 function remove(elm) {
     data.splice(elm, 1)
@@ -80,3 +86,5 @@ function short_list(data) {
         }
     }
 }
+
+

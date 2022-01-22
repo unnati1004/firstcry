@@ -1,0 +1,71 @@
+#cvvmain {
+    width: 35%;
+    height: 590px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+  }
+  #main2 {
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 20px;
+  }
+  .text1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 35px;
+    font-size: 25px;
+  }
+  .text1 > div:nth-child(2) {
+    color: #188000;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  .text1 > div:nth-child(1) {
+    color: #cfd6dc;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  .imgflex {
+    margin-top: 20px;
+  }
+  .card {
+    width: 90%;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: #f1f3f5;
+    outline: none;
+    border: 0px;
+  }
+  .card > input {
+    margin: 10px;
+    outline: none;
+    background-color: #f1f3f5;
+    border: 0px;
+  }
+  .flex1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5px;
+    gap: 10px;
+    height: 30px;
+  }
+  .flex1 > input {
+    outline: none;
+    background-color: #f1f3f5;
+    border: 0px;
+  }
+  #submitsave {
+    margin-top: 20px;
+    margin-left: 22px;
+    padding: 10px 150px;
+    background-color: #2ca85e;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+  }

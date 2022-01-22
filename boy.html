@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/boy.css">
+    <link rel="stylesheet" href="./styles/landingpage.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
 <body>
+    <div id="container">
+
+    </div>
     <div id="main">
 
         <div id="left">
-            <div id="filter">FILTER BY</div>
+                <div id="filter">
+                    <h5>FILTER BY</h5>
+                    <p>CLEAR ALL</p>
+                </div>
             <div id="data">
                 <div id="clothes">
                     <h4>CLOTHES & SHOES</h4>
@@ -27,8 +35,8 @@
                 <!-- <br></br> -->
                 <div id="brands">
                     <h4 class="collapse">SHORT BY</h4>
-                    <div class="content" >
-                        <div><input type="radio" id="low" value="low" name="price" > LOW TO HIGH</div>
+                    <div class="content">
+                        <div><input type="radio" id="low" value="low" name="price"> LOW TO HIGH</div>
                         <div><input type="radio" id="high" value="high" name="price"> HIGH TO LOW</div>
                     </div>
                 </div>
@@ -84,12 +92,39 @@
                 </div>
             </div>
         </div>
-        <div id="products" class="zoom"></div>
+
+        <div>
+            <div id="right">
+                <h4>Tops and T-shirts for Boys</h4>
+            <div id='sorting'>
+                <select id="sort" onchange="sorting()">
+                    <option value="">sort by: price</option>
+                    <option value="high">hightolow</option>
+                    <option value="low">lowtohigh</option>
+                </select>
+            </div>
+            </div>
+          
+            <hr>
+            <div id="line">
+               
+            <div>SUBCATEGORIES :Tops and T-shirtsGENDER :UnisexBoy</div>
+            <div>CLEAR ALL</div>
+           
+            </div>
+           <hr>
+            <div id="products" class="zoom">
+               
+            </div>
+        </div>
     </div>
 
 </body>
 
 </html>
-<script src="./scripts/boy.js">
-
+<script src="./scripts/boy.js"></script>
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
 </script>
