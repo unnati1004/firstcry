@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3ab027f621.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/footer.css">
    <link rel="stylesheet" href="./styles/landingpage.css">
    <link rel="stylesheet" href="./styles/navbar.css">
+   
+
 </head>
 <body>
      
@@ -225,11 +231,17 @@
             <img src="https://cdn.fcglcdn.com/brainbees/images/intellitots-franchise-desktop-bottom-banner.jpg" alt="">
         </div>
     </div>
+    <div id="footer"></div>
     <script src="./scripts/slider.js"> </script>
+
 </body>
 </html>
 <script type="module">
     import navbar from "./components/navbar.js";
     let container=document.getElementById("container");
     container.innerHTML=navbar();
+
+    import footer from "./components/footer.js"
+let containe=document.getElementById("footer");
+    containe.innerHTML=footer();
 </script>

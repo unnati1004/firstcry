@@ -1,8 +1,6 @@
 #footer {
     background-color: #cef4f5;
     width: 100%;
-    height: 1000px;
-
 }
 
 #hourse {
@@ -54,7 +52,7 @@ a:hover {
 
 #tmain {
     height: 200px;
-    width: 80%;
+    width: 100%;
     /* border: 1px solid black; */
     margin: auto;
     display: flex;

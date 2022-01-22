@@ -1,0 +1,143 @@
+function footer(){
+
+return `
+<div id="footer">
+
+<div id="hourse">
+     <div id="tmain">
+         <div>
+             <i class="fa-solid fa-horse fa-3x"></i>
+             <div>2 lakhs+ </div>
+             <div>unique products</div>
+         </div>
+         <div>
+             <i class="fa-solid fa-star fa-3x"></i>
+             <div>5800 Brands</div>
+
+         </div>
+         <div>
+             <i class="fa-solid fa-baby fa-3x"></i>
+             <div>7.5 Million
+             </div>
+             <div>Registered Users</div>
+         </div>
+         <div>
+             <i class="fa-solid fa-arrows-rotate fa-3x"></i>
+             <div>Registered Users</div>
+             <div>& Exchange Policy</div>
+         </div>
+         <div>
+             <i class="fa-solid fa-truck fa-3x"></i>
+             <div>Free Shipping </div>
+             <div>above Rs. 699*</div>
+         </div>
+
+     </div>
+ </div>
+ <div id="basefooter">
+     <div id="footerleft">
+          <div id="hdr">CATEGORIES</div>
+
+         <span> <a href="/">Clothing & Fashion</a></span>
+         <a href="/">Toys</a>
+         <a href="/">Books & CDs</a>
+         <a href="/">School Supplies</a>
+         <a href="/">Birthday Party Supplies</a>
+         <a href="/">Baby Diapering</a>
+         <a href="/">Feeding & Nursing</a>
+         <a href="/">Bath & Skin Care</a>
+         <a href="/">Health & Safety</a>
+         <a href="/">Baby Gear</a>
+         <a href="/">Nursery</a>
+         <a href="/">Moms & Maternity</a>
+         <a href="/">Gifts</a>
+         <a href="/">Preschool Admissions</a>
+         <div id="hdr">COMPANY INFO</div>
+
+         <a href="/">About Us</a>
+         <a href="/">Contact Us</a>
+         <a href="/">FirstCry Stores & Preschool</a>
+     </div>
+     <div id="footerleft">
+         <div id="hdr">FIRSTCRY PARENTING</div>
+         <hr>
+         <a href="/">Getting Pregnant</a>
+         <a href="/">Pregnancy</a>
+         <a href="/">Baby</a>
+         <a href="/">Toddler</a>
+         <a href="/">Preschooler</a>
+         <a href="/">Big Kid</a>
+         <a href="/">Vaccination</a>
+         <a href="/">Growth Tracker</a>
+         <a href="/">Baby Names</a>
+         <a href="/">FirstCry Parenting YouTube</a>
+         <a href="/">Coloring Pages</a>
+         <div id="hdr">REGIONAL PARENTING</div>
+         <a href="/">FirstCry Hindi Parenting</a>
+         <a href="/">FirstCry Marathi Parenting</a>
+         <a href="/">FirstCry Bangla Parenting</a>
+         <a href="/">FirstCry Arabia Parenting</a>
+         <a href="/">FirstCry UAE Parenting</a>
+         <hr>
+     </div>
+     <div id="footerleft">
+         <div id="hdr">FIRSTCRY PARENTING</div>
+
+         <a href="/">Payments</a>
+         <a href="/">Shipping Policy</a>
+         <a href="/">Return & Replacement Policy</a>
+         <a href="/">Cancellation Policy</a>
+         <a href="/">Terms of Use</a>
+         <a href="/">Privacy Policy</a>
+         <a href="/">Next day & Same day delivery</a>
+         <a href="/">Responsible Disclosure</a>
+         <div id="hdr">PAYMENT METHOD</div>
+
+         <a href="/">Credit Cards</a>
+         <a href="/">Net Banking</a>
+         <a href="/">ATM & Debit Cards</a>
+         <a href="/">COD(Cash on Delivery)</a>
+         <a href="/">Easy EMI</a>
+         <div id="hdr">CONNECT WITH US</div>
+         <div id="followsymb">
+             <a class="sign" href="facebook.com"> <i class="fab fa-facebook-square fa-2x"></i></a>
+             <i class="fab fa-twitter-square fa-2x"></i>
+             <i class="fab fa-instagram-square fa-2x"></i>
+             <i class="fab fa-youtube-square fa-2x"></i>
+
+         </div>
+
+         <hr>
+
+     </div>
+     <div id="footerleft">
+         <div id="hdr">FIRSTCRY PARENTING</div>
+
+         <a href="/">FirstCry India: Shopping & Parenting</a>
+         <a href="/">FirstCry India: Shopping & Parenting iOS</a>
+         <div id="hdr">Learning & Education</div>
+
+         <a href="/">Intellikits</a>
+         <a href="/">Intellitots</a>
+         <div id="hdr">SHOP INTERNATIONAL</div>
+
+         <a href="/">FirstCry UAE</a>
+         <a href="/">FirstCry UAE: Shopping & Parenting</a>
+         <a href="/">FirstCry UAE: Shopping & Parenting iOS</a>
+         <div id="hdr"> EDUCATIONAL APPS</div>
+
+         <a href="/">PlayBees: Kids Learning & Education App</a>
+         <a href="/">PlayBees: 123 Kids Numbers App</a>
+         <a href="/">PlayBees: ABC for Kids</a>
+     </div>
+     <div>
+         <img style="height: 100%;" src="./boysphoto/borderrightphoto.jpg" alt="">
+     </div>
+ </div>
+ <div id="footerwidth">
+     <img src="./boysphoto/footer1.jpg" alt=""><img src="./boysphoto/footer2.jpg" alt="">
+ </div>
+</div>
+`
+}
+export default footer
