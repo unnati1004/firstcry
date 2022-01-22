@@ -1468,7 +1468,7 @@ function navbar() {
         <img src="https://cdn.fcglcdn.com/brainbees/banners/FC-menu-carters-logo.webp" alt="" id="img">
      </ul>
  </nav>
-</div> `;
+</div>`;
 }
 
 export default navbar
