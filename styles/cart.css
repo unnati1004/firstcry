@@ -1,7 +1,7 @@
 #topcart {
     width: 100%;
     height: 80px;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     display: flex;
     justify-content: space-between;
 
@@ -17,13 +17,13 @@
     padding-top: 30px;
     padding-right: 40px;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 #cartbody {
     width: 100%;
     height: 1000px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
@@ -31,12 +31,12 @@
 
 #cartbodyleft {
     width: 65%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #cartbodyright {
     width: 35%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     
@@ -69,7 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    border: 1px solid rgb(187, 168, 168);
+    /* border: 1px solid rgb(187, 168, 168); */
     width: 90%;
     margin: auto;
     
@@ -110,7 +110,7 @@
     width: 200px;
     height: 200px;
     padding-left: 2%;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     margin-left: 50px;
 }
 
@@ -149,5 +149,15 @@ padding-right: 20px;
 #paymentid>div{
 display: flex;
 justify-content: space-between;
+padding-left: 30px;
+padding-right: 80px;
 
+}
+#bttmadd{
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 20px;
 }
