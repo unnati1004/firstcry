@@ -12,4 +12,4 @@ i++;
 }else{
 i=0;
 }
-}setInterval(slides,1000)
+}setInterval(slides,1300)

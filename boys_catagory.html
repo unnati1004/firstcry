@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="boys.css">
+    <link rel="stylesheet" href="./styles/landingpage.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <style>
 
     </style>
 </head>
 
 <body>
+    <div id="container">
+
+    </div>
     <div id="maincont">
         <p id="headline1">
             Home > Boys Clothes and Fashion</p>
@@ -83,3 +88,8 @@
 
 </html>
 <script src="./scripts/boys_catagory.js"></script>
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let container=document.getElementById("container");
+    container.innerHTML=navbar();
+</script>
