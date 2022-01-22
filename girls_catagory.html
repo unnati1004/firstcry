@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <div id="container">
+
+    </div>
     <div id="maincont">
         <p id="headline1">Home > Girls Clothes and Fashion</p>
         <h2 id="headline1">GIRLS CLOTHES AND FASHION</h2>
@@ -61,6 +64,8 @@
 </body>
 
 </html>
-<script src="./scripts/girls_catogory.js">
-
+<script src="./scripts/girls_catogory.js",type="module">
+  import navbar from "./components/navbar.js";
+    let container=document.getElementById("container");
+    container.innerHTML=navbar();
 </script>
