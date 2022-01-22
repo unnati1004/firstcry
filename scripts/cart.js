@@ -21,10 +21,13 @@ data.map((el, index) => {
     var nm = document.createElement("p");
     nm.textContent = name;
     var btt = document.createElement("button")
-    btt.textContent = "REMOVE"
+    btt.innerHTML ='<i class="fas fa-trash-alt fa-lg"></i>'+ "   "+ " REMOVE"
+    btt.setAttribute("id","btrem")
 
     var bttsl = document.createElement("button")
-    bttsl.textContent = "MOVE TO SHORTLIST"
+    bttsl.innerHTML ='<i class="fa-duotone fa-circle-heart"></i>'+"  "+ "MOVE TO SHORTLIST"
+
+    bttsl.setAttribute("id","btrem")
     bttsl.addEventListener("click", function () {
         short_list(el)
         remove(el)

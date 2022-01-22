@@ -160,4 +160,13 @@ padding-right: 80px;
     margin: auto;
     font-size: 15px;
     margin-top: 20px;
+    color: red;
+}
+#btrem{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px 40px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
 }
