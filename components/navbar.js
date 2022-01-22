@@ -1,4 +1,4 @@
-function navbar(){
+function navbar() {
     return ` <div id="topNav">
     <div class="logo">
         <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="">
@@ -154,7 +154,7 @@ function navbar(){
                 </div>
             </div>
         </li>
-        <div id="rotate">></div>
+        <div id="rotate"></div>
 
         <li>BOY FASHION
             <div class="megamenu">
