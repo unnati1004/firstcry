@@ -50,3 +50,15 @@ alert("Are You Sure you want cancel this")
 window.location.href="login.html"
 
 }
+let forget=document.getElementById("forget")
+window.onclick = function (event) {
+    if (event.target == forget) {
+        forget.style.display = "none";
+    }
+  }
+
+
+
+document.getElementById("unnati").addEventListener("click",()=>{
+    forget.style.display="block"
+})
