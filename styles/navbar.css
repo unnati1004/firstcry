@@ -9,6 +9,14 @@
     text-decoration: none;
   
 }
+li{
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
 #topNav{
     
     width: 100%;
