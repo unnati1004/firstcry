@@ -13,24 +13,58 @@ let short_btn = document.getElementById('shortlist')
 
 let add_cart = document.getElementById('add_cart')
 
-add_cart.addEventListener('onclick', to_cart);
-
-function to_cart() {
-    let Cart = JSON.parse(localStorage.getItem('Cart')) || [];
-    Cart.push(data);
-    localStorage.setItem('Cart', JSON.stringify(Cart))
-}
-
+add_cart.addEventListener('onclick', cart);
 
 short_btn.addEventListener('onclick', short_list);
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 
-function short_list(data) {
-    console.log(data);
-    short.push(data);
-    localStorage.setItem('shortlist', JSON.stringify(short));
+let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 
+function short_list(data) {
+    // console.log(data);
+    if (short.length === 0) {
+        short.push(data);
+        localStorage.setItem('shortlist', JSON.stringify(short));
+    }
+    else {
+        let c = 0;
+        for (let i = 0; i < short.length; i++) {
+            if (short[i].image === data.image) {
+                console.log(++c);
+            }
+        }
+        if (c === 0) {
+            short.push(data);
+            localStorage.setItem('shortlist', JSON.stringify(short));
+        }
+    }
+    // short.push(data);
+    // localStorage.setItem('shortlist', JSON.stringify(short));
 }
+// let c = 0;
+function cart(data) {
+    // console.log(data);
+    if (cart_item.length === 0) {
+        cart_item.push(data);
+        localStorage.setItem("Cart", JSON.stringify(cart_item));
+    }
+    else {
+        let c = 0;
+        for (let i = 0; i < cart_item.length; i++) {
+            if (cart_item[i].image === data.image) {
+                console.log(++c);
+            }
+        }
+        if (c === 0) {
+            cart_item.push(data);
+            localStorage.setItem("Cart", JSON.stringify(cart_item));
+
+        }
+    }
+}
+
+
+
 function Display_img() {
 
     console.log(data);
