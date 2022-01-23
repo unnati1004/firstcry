@@ -156,3 +156,6 @@ window.onclick = function (event) {
 document.getElementById("unnati").addEventListener("click",()=>{
     forget.style.display="block"
 })
+document.getElementById('dummy').addEventListener("click",()=>{
+    window.location.href='shortlist.html'
+})

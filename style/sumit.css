@@ -355,3 +355,7 @@ p{
       border: 0px;
       border-radius: 6px;
   }
+  #dummy{
+      /* padding: ; */
+      margin-left: 30px;
+  }
