@@ -154,25 +154,24 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function sorting(){
+function sorting() {
   var val = document.querySelector("#sort").value
- if(val=="low")
- {
-   document.querySelector("#products").innerHTML="";
-    product.sort(function(a,b){
-     return a.price - b.price;
-   });
-   items(product)
-  
- }
- else{
-   document.querySelector("#products").innerHTML="";
-    product.sort(function(a,b){
-     return b.price - a.price ;
- });
- items(product)
+  if (val == "low") {
+    document.querySelector("#products").innerHTML = "";
+    product.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    items(product)
 
-}
+  }
+  else {
+    document.querySelector("#products").innerHTML = "";
+    product.sort(function (a, b) {
+      return b.price - a.price;
+    });
+    items(product)
+
+  }
 }
 
 function short_list(data) {
@@ -213,7 +212,21 @@ function cart(data) {
     if (c === 0) {
       cart_item.push(data);
       localStorage.setItem("Cart", JSON.stringify(cart_item));
-      
+
     }
   }
 }
+
+// Navbar linking
+document.getElementById("login").addEventListener("click", signIn);
+
+function signIn() {
+  window.location.href = "login.html"
+}
+
+document.getElementById("shortlist").addEventListener("click", function () {
+  window.location.href = "shortlist.html"
+})
+document.getElementById("carticon").addEventListener("click", function () {
+  window.location.href = "sumit.html";
+})
