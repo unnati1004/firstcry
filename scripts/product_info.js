@@ -1,6 +1,9 @@
 import navbar from "../components/navbar.js"
 import footer from "../components/footer.js"
 
+let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
+
 let header = document.getElementById('container')
 header.innerHTML = navbar();
 
@@ -9,16 +12,19 @@ add_footer.innerHTML = footer();
 
 let data = JSON.parse(localStorage.getItem('single_product'));
 
-let short_btn = document.getElementById('shortlist')
+let short_btn = document.getElementById('sh')
 
 let add_cart = document.getElementById('add_cart')
 
-add_cart.addEventListener('onclick', cart);
+add_cart.addEventListener('click', function () {
+    cart(data);
+});
 
-short_btn.addEventListener('onclick', short_list);
-let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+short_btn.addEventListener('click', () => {
+    short_list(data)
+})
+console.log(short);
 
-let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 
 function short_list(data) {
     // console.log(data);
@@ -38,8 +44,6 @@ function short_list(data) {
             localStorage.setItem('shortlist', JSON.stringify(short));
         }
     }
-    // short.push(data);
-    // localStorage.setItem('shortlist', JSON.stringify(short));
 }
 // let c = 0;
 function cart(data) {
@@ -62,7 +66,6 @@ function cart(data) {
         }
     }
 }
-
 
 
 function Display_img() {
@@ -264,6 +267,7 @@ function frequently() {
 
 }
 frequently();
+
 document.getElementById("login").addEventListener("click", signIn);
 
 function signIn() {
