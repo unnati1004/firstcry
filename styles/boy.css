@@ -32,7 +32,6 @@ p{
 #data>div>div{
     display: flex;
     color:#424141 ;
-
     /* flex-direction: row; */
     flex-direction: column;
     /* padding: 2%; */
@@ -46,6 +45,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
+
 #products{
     /* border: 1px solid black; */
     width: 100%;
