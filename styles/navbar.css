@@ -7,7 +7,18 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-  
+}
+a{
+ text-decoration: none;
+ color: #575757;;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
 }
 #topNav{
     
