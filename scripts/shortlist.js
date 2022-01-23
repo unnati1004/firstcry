@@ -20,6 +20,7 @@ var data = JSON.parse(localStorage.getItem("shortlist"));
 
         var btn = document.createElement("button")
         btn.textContent="ADD TO CART"
+        
         btn.style.background="#ff7043"
 
 
