@@ -1,3 +1,5 @@
+
+
 var image = ["./boysphoto/slide1.jpg",
     "./boysphoto/slide2.jpg",
     "./boysphoto/slide3.jpg",
@@ -13,16 +15,3 @@ function slides() {
         i = 0;
     }
 } setInterval(slides, 1300)
-// Navbar linking
-document.getElementById("login").addEventListener("click", signIn);
-
-function signIn() {
-    window.location.href = "login.html"
-}
-
-document.getElementById("shortlist").addEventListener("click", function () {
-    window.location.href = "shortlist.html"
-})
-document.getElementById("carticon").addEventListener("click", function () {
-    window.location.href = "sumit.html";
-})
