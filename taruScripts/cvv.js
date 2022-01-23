@@ -11,6 +11,7 @@ function cvvFn(event) {
   setTimeout(() => {
     if (cart == 123456789 && cvv == 799) {
       alert("thank you your odrer will be deliverd soon");
+      window.location.href = "./index.html"
     } else {
       alert("sorry something some went wrong");
     }
