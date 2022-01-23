@@ -1,7 +1,7 @@
 function navbar() {
     return ` <div id="topNav">
     <div class="logo">
-        <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="">
+       <a href="./index.html"> <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt=""></a>
     </div>
 
     <div class="searchBar"> 
