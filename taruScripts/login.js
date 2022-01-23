@@ -22,6 +22,7 @@ alert("we are processing just a sec plz")
 setTimeout(()=>{
     if(count>=1){
     alert("You are sussefully login Thank You ")
+    window.location.href="index.html"
 }else{
     alert("sorry something went wrong")
 }
