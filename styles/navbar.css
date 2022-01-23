@@ -110,6 +110,13 @@ ul{
     
 
 }
+.manuNav>div>a{
+    color: #575757;
+    
+}
+#carticon>a{
+    margin-left: 5px;
+}
 .location{
     display: flex;
     justify-content: space-between;
@@ -130,10 +137,11 @@ ul{
 }
 #cart{
     font-size: 12px;
-    margin-top: 5px;
+    
 }
 #carticon{
     border: none;
+    display: flex;
 }
 
  /* megabar */

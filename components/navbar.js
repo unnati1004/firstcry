@@ -38,7 +38,7 @@ function navbar() {
             <ellipse cx="15.221" cy="16.744" rx="1.243" ry="1.256" stroke="#666" stroke-width="1.5">
             </ellipse>
         </svg>
-        <span id="cart">cart</span></a>
+        
         
         </div>
     </div>
