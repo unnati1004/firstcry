@@ -1,7 +1,7 @@
 import navbar from "../components/navbar.js"
 import footer from "../components/footer.js"
 
-let header = document.getElementById('navbar')
+let header = document.getElementById('container')
 header.innerHTML = navbar();
 
 let add_footer = document.getElementById('footer')
@@ -230,3 +230,15 @@ function frequently() {
 
 }
 frequently();
+document.getElementById("login").addEventListener("click", signIn);
+
+function signIn() {
+    window.location.href = "login.html"
+}
+
+document.getElementById("shortlist").addEventListener("click", function () {
+    window.location.href = "shortlist.html"
+})
+document.getElementById("carticon").addEventListener("click", function () {
+    window.location.href = "sumit.html";
+})
