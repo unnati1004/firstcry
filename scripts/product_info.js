@@ -22,11 +22,11 @@ function to_cart() {
 }
 
 
-short_btn.addEventListener('onclick', short_list);
+short_btn.addEventListener('click', short_list);
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 
 function short_list(data) {
-    console.log(data);
+    console.log("data",data);
     short.push(data);
     localStorage.setItem('shortlist', JSON.stringify(short));
 
