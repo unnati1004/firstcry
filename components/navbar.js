@@ -1,10 +1,10 @@
 function navbar() {
     return ` <div id="topNav">
     <div class="logo">
-        <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="">
+       <a href="./index.html"> <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt=""></a>
     </div>
 
-    <div class="searchBar">
+    <div class="searchBar"> 
         <input type="text" placeholder="Search for a Category, Brand or product" >
         <span id="cross">x</span>
         <svg viewBox="0 0 20 20" fill="greyT2" xmlns="http://www.w3.org/2000/svg" iconsize="20" class="Iconsearch"><g clip-path="url(#search_svg__clip0)"><path d="M19.77 18.67l-3.76-3.76a9.062 9.062 0 002.12-5.83C18.13 4.06 14.07 0 9.06 0 4.06 0 0 4.06 0 9.08c0 5.02 4.06 9.08 9.06 9.08 2.23 0 4.27-.81 5.85-2.15l3.76 3.76c.3.3.8.3 1.1 0 .31-.3.31-.8 0-1.1zM9.06 16.6c-4.14 0-7.51-3.37-7.51-7.52 0-4.15 3.37-7.52 7.51-7.52s7.51 3.37 7.51 7.52c0 4.15-3.37 7.52-7.51 7.52z" fill="#666"></path></g><defs><clipPath id="search_svg__clip0"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
@@ -20,25 +20,26 @@ function navbar() {
         <div>Support</div>
         <div>Track Order</div>
         <div>FirstCry Parenting</div>
-        <div id="login">Login / Register</div>
+        <div id="login"> <a href="./login.html">Login / Register</a></div>
         <div class="location" id="shortlist">
             <svg viewBox="0 0 1024 1024" class="icon icon-heart">
                 <path class="path1" d="M486.4 972.8c-4.283 0-8.566-1.074-12.434-3.222-4.808-2.67-119.088-66.624-235.122-171.376-68.643-61.97-123.467-125.363-162.944-188.418-50.365-80.443-75.901-160.715-75.901-238.584 0-148.218 120.582-268.8 268.8-268.8 50.173 0 103.462 18.805 150.051 52.952 27.251 19.973 50.442 44.043 67.549 69.606 17.107-25.565 40.299-49.634 67.55-69.606 46.589-34.147 99.878-52.952 150.050-52.952 148.218 0 268.8 120.582 268.8 268.8 0 77.869-25.538 158.141-75.901 238.584-39.478 63.054-94.301 126.446-162.944 188.418-116.034 104.754-230.314 168.706-235.122 171.376-3.867 2.149-8.15 3.222-12.434 3.222zM268.8 153.6c-119.986 0-217.6 97.614-217.6 217.6 0 155.624 120.302 297.077 221.224 388.338 90.131 81.504 181.44 138.658 213.976 158.042 32.536-19.384 123.845-76.538 213.976-158.042 100.922-91.261 221.224-232.714 221.224-388.338 0-119.986-97.616-217.6-217.6-217.6-87.187 0-171.856 71.725-193.314 136.096-3.485 10.453-13.267 17.504-24.286 17.504s-20.802-7.051-24.286-17.504c-21.456-64.371-106.125-136.096-193.314-136.096z"></path>
             </svg>
-            <span>Shortlist</span>
+            <a href="./shortlist.html"><span>Shortlist</span></a>
          </div>
         <div  class="location" id="carticon">
-            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" mr="8" class="Iconp"
-                    stroke="greyBase" iconsize="20">
-                    <path
-                        d="M4.987 5.469l1.848 7.2a1 1 0 00.968.752h8.675a1 1 0 00.962-.726l1.697-5.952a1 1 0 00-.962-1.274H4.987zm0 0l-.943-3.248a1 1 0 00-.96-.721H1"
-                        stroke="#666" stroke-width="1.5" stroke-linecap="round"></path>
-                    <ellipse cx="9.421" cy="16.744" rx="1.243" ry="1.256" stroke="#666" stroke-width="1.5">
-                    </ellipse>
-                    <ellipse cx="15.221" cy="16.744" rx="1.243" ry="1.256" stroke="#666" stroke-width="1.5">
-                    </ellipse>
-                </svg>
-                <span id="cart">cart</span>
+            <a href="./sumit.html"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" mr="8" class="Iconp"
+            stroke="greyBase" iconsize="20">
+            <path
+                d="M4.987 5.469l1.848 7.2a1 1 0 00.968.752h8.675a1 1 0 00.962-.726l1.697-5.952a1 1 0 00-.962-1.274H4.987zm0 0l-.943-3.248a1 1 0 00-.96-.721H1"
+                stroke="#666" stroke-width="1.5" stroke-linecap="round"></path>
+            <ellipse cx="9.421" cy="16.744" rx="1.243" ry="1.256" stroke="#666" stroke-width="1.5">
+            </ellipse>
+            <ellipse cx="15.221" cy="16.744" rx="1.243" ry="1.256" stroke="#666" stroke-width="1.5">
+            </ellipse>
+        </svg>
+        
+        
         </div>
     </div>
 </div>
@@ -50,7 +51,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="boys_catagory.html">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -161,7 +162,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="boys_catagory.html">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -270,7 +271,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -379,7 +380,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -488,7 +489,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -597,7 +598,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -706,7 +707,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -815,7 +816,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -924,7 +925,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -1033,7 +1034,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -1142,7 +1143,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -1251,7 +1252,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -1360,7 +1361,7 @@ function navbar() {
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
                     <p><a href="">BOY FASHION</a></p>
-                    <p><a href="">GIRL FASHION</a></p>
+                    <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
                     <p><a href="">DIAPERING</a></p>
@@ -1468,7 +1469,7 @@ function navbar() {
         <img src="https://cdn.fcglcdn.com/brainbees/banners/FC-menu-carters-logo.webp" alt="" id="img">
      </ul>
  </nav>
-</div> `;
+</div>`;
 }
 
 export default navbar

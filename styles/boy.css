@@ -1,7 +1,6 @@
 #main{
     display: flex;
-    
-    width: 100%;
+    width: 98%;
     height: 100%;
     justify-content: space-between;
     padding: 01%;
@@ -32,7 +31,6 @@ p{
 #data>div>div{
     display: flex;
     color:#424141 ;
-
     /* flex-direction: row; */
     flex-direction: column;
     /* padding: 2%; */
@@ -46,9 +44,10 @@ p{
     display: flex;
     justify-content: space-between;
 }
+
 #products{
     /* border: 1px solid black; */
-    width: 100%;
+    width: 90%;
     /* height: 1000px; */
     display: grid;
     /* flex-wrap: wrap */

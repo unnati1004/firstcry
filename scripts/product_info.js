@@ -1,7 +1,10 @@
 import navbar from "../components/navbar.js"
 import footer from "../components/footer.js"
 
-let header = document.getElementById('navbar')
+let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
+
+let header = document.getElementById('container')
 header.innerHTML = navbar();
 
 let add_footer = document.getElementById('footer')
@@ -9,18 +12,18 @@ add_footer.innerHTML = footer();
 
 let data = JSON.parse(localStorage.getItem('single_product'));
 
-let short_btn = document.getElementById('shortlist')
+let short_btn = document.getElementById('sh')
 
 let add_cart = document.getElementById('add_cart')
 
-add_cart.addEventListener('onclick', to_cart);
+add_cart.addEventListener('click', function () {
+    cart(data);
+});
 
-function to_cart() {
-    let Cart = JSON.parse(localStorage.getItem('Cart')) || [];
-    Cart.push(data);
-    localStorage.setItem('Cart', JSON.stringify(Cart))
-}
-
+short_btn.addEventListener('click', () => {
+    short_list(data)
+})
+console.log(short);
 
 short_btn.addEventListener('click', short_list);
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
@@ -30,7 +33,8 @@ function short_list(data) {
     short.push(data);
     localStorage.setItem('shortlist', JSON.stringify(short));
 
-}
+        }
+
 function Display_img() {
 
     console.log(data);
@@ -230,3 +234,16 @@ function frequently() {
 
 }
 frequently();
+
+document.getElementById("login").addEventListener("click", signIn);
+
+function signIn() {
+    window.location.href = "login.html"
+}
+
+document.getElementById("shortlist").addEventListener("click", function () {
+    window.location.href = "shortlist.html"
+})
+document.getElementById("carticon").addEventListener("click", function () {
+    window.location.href = "sumit.html";
+})

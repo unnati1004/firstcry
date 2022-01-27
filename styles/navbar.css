@@ -7,7 +7,18 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-  
+}
+a{
+ text-decoration: none;
+ color: #575757;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
 }
 #topNav{
     
@@ -15,8 +26,8 @@
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
    
 }
 #topNav>div{
@@ -94,10 +105,17 @@
     border-right: 1.5px solid gray;
     padding-right: 8px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 5px;
     color: #575757;
     
 
+}
+.manuNav>div>a{
+    color: #575757;
+    
+}
+#carticon>a{
+    margin-left: 5px;
 }
 .location{
     display: flex;
@@ -119,9 +137,11 @@
 }
 #cart{
     font-size: 12px;
+    
 }
 #carticon{
     border: none;
+    display: flex;
 }
 
  /* megabar */
@@ -129,12 +149,13 @@
 #megabar{
     width: 100%;
     height: 60px;
-   
+   margin-top: -20px;
     background-color: #ffd91c;
 }
 #megabar>nav>ul{
     display: flex;
-    margin-top: 10px;
+    margin-top: -30px;
+    
     
     
 
@@ -145,10 +166,11 @@ li{
     /* margin-left: 20px; */
     
     color: #575757;
-    padding-top: 20px;
-    padding-bottom: 20px;
+   
+    /* padding-bottom: 20px; */
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 ul>li:nth-child(1){
     margin-left: 20px;
@@ -205,7 +227,7 @@ li:hover{
 }
 .nav-bar ul li:nth-child(1):hover .megamenu{
     position: absolute;
-    top: 61px;
+    top: 30pxpx;
     left: 0;
 }
 .inner-megamenu>p:nth-child(1){
@@ -230,10 +252,10 @@ li:hover{
 #img1{
     width: 60px;
     height: 20px;
-    margin-top: 20px;
+    margin-top: 2px;
 }
 #img{
-    margin-top: 0;
+    margin-top: -18px;
     height: 58px;
     width: 80px;
     margin-left: 10px;
