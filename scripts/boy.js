@@ -3,7 +3,7 @@ let url ="http://localhost:2345/nightwears";
 let url1 = "http://localhost:2345/tshirt";
 async function getUserRepo() {
 
-  let res = await fetch(url)
+  let res = await fetch(url1)
   let data = await res.json()
 
   // display(repo_data)
