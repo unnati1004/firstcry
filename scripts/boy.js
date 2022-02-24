@@ -2,21 +2,21 @@
 let url ="http://localhost:2345/nightwears";
 let url1 = "http://localhost:2345/tshirt";
 async function getUserRepo(url) {
-
   let res = await fetch(url)
   let data = await res.json()
-
-  // display(repo_data)
+  localStorage.setItem("productList", JSON.stringify(data))
   items(data)
+
   console.log(data);
 }
-getUserRepo();
-// localStorage.setItem("productList", JSON.stringify(arr))
+getUserRepo(url);
+// localStorage.setItem("productList", JSON.stringify(data))
 let product = JSON.parse(localStorage.getItem("productList")) || [];
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 // items(product)
 console.log(product);
+
 function items(product) {
   product.map((elem) => {
 
@@ -59,6 +59,7 @@ function items(product) {
     div1.append(h, p);
     div2.append(div, div1, div3);
     img.addEventListener('click', () => {
+      console.log(elem);
       localStorage.setItem('single_product', JSON.stringify(elem));
       window.location.href = "./product_info.html";
     })
