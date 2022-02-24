@@ -1,10 +1,10 @@
 
 
-var image = ["../boysphoto/slide1.jpg",
-    "../boysphoto/slide2.jpg",
-    "../boysphoto/slide3.jpg",
-    "../boysphoto/slide4.jpg",
-    "../boysphoto/slide5.jpg"];
+var image = ["./boysphoto/slide1.jpg",
+    "./boysphoto/slide2.jpg",
+    "./boysphoto/slide3.jpg",
+    "./boysphoto/slide4.jpg",
+    "./boysphoto/slide5.jpg"];
 
 var i = 0;
 function slides() {
