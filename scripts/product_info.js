@@ -1,7 +1,7 @@
 import navbar from "../components/navbar.js"
 import footer from "../components/footer.js"
 
-let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+let short1 = JSON.parse(localStorage.getItem('shortlist')) || [];
 let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 
 let header = document.getElementById('container')
@@ -23,9 +23,9 @@ add_cart.addEventListener('click', function () {
 short_btn.addEventListener('click', () => {
     short_list(data)
 })
-console.log(short);
+console.log(short1);
 
-short_btn.addEventListener('click', short_list);
+// short_btn.addEventListener('click', short_list);
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 
 function short_list(data) {
