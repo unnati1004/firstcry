@@ -131,11 +131,11 @@ return `
          <a href="/">PlayBees: ABC for Kids</a>
      </div>
      <div>
-         <img style="height: 100%;" src="./boysphoto/borderrightphoto.jpg" alt="">
+         <img style="height: 100%;" src="../boysphoto/borderrightphoto.jpg" alt="">
      </div>
  </div>
  <div id="footerwidth">
-     <img src="./boysphoto/footer1.jpg" alt=""><img src="./boysphoto/footer2.jpg" alt="">
+     <img src="../boysphoto/footer1.jpg" alt=""><img src="../boysphoto/footer2.jpg" alt="">
  </div>
 </div>
 `

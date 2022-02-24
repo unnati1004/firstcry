@@ -50,7 +50,7 @@ function navbar() {
             <div class="megamenu">
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
-                    <p><a href="boys_catagory.html">BOY FASHION</a></p>
+                    <p><a href="../pages/boys_catagory.html">BOY FASHION</a></p>
                     <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
@@ -161,7 +161,7 @@ function navbar() {
             <div class="megamenu">
                 <div class="inner-megamenu">
                     <p id="head">ALL CATEGORIES</p>
-                    <p><a href="boys_catagory.html">BOY FASHION</a></p>
+                    <p><a href="../pages/boys_catagory.html">BOY FASHION</a></p>
                     <p><a href="girls_catagory.html">GIRL FASHION</a></p>
                     <p><a href="">FOOTWEAR</a></p>
                     <p><a href="">TOYS</a></p>
