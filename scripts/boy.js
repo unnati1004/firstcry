@@ -82,7 +82,7 @@ var arr = [
     "image3": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10525123sz.webp",
   }
 ]
-
+ 
 
 
 localStorage.setItem("productList", JSON.stringify(arr))
