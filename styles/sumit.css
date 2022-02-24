@@ -4,6 +4,7 @@
     /* border: black 1px solid; */
     display: flex;
     justify-content: space-between;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 #address>button{
