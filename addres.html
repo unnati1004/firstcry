@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/addres.css">
+    <link rel="stylesheet" href="./styles/addres.css">
     <title>Document</title>
-    
+
 </head>
+
 <body>
-   <div id="forget">
-    <div id="main">
-        <div class="add">
-            <h2>Change/Save Address</h2>
-            <div >
-               <a  id="tid" href=""> &#x2716;</a>
+    <div id="forget">
+        <div id="main">
+            <div class="add">
+                <h2>Change/Save Address</h2>
+                <div>
+                    <a id="tid" href=""> &#x2716;</a>
+                </div>
+
             </div>
-           
+            <div id="scroll">
+                <input type="text" placeholder="Full Name" id="name" required>
+
+                <div class="inputd">
+
+                    <input type="text" placeholder="Mobile No." id="mobile" required>
+
+                    <input type="text" placeholder="Alternate No.(Optional)">
+                </div>
+                <hr>
+                <div class="inputd">
+                    <form id="form">
+                        <input type="text" placeholder="Pincode*" id="pin" required>
+
+                        <input type="text" placeholder="City*" id="city" required>
+                </div>
+                <input type="text" placeholder="Flat/House No./Building*" id="house" required>
+                <input type="text" placeholder="Area/Locality*" id="area" required>
+                <input type="text" placeholder="Landmark(Optional)" id="name" required>
+
+
+
+                <p>Tag this location for later</p>
+                <div id="home">
+
+
+                    <div class="home1">
+                        <a href="">
+                            <div>Home</div>
+                        </a>
+                        <a href="">
+                            <div>Office</div>
+                        </a>
+                    </div>
+                    <a href="">
+                        <div>Clear</div>
+                    </a>
+
+
+                </div>
+
+                <div id="tcheckbox">
+                    <input type="checkbox">
+
+                    <p>Make this as my default address</p>
+                </div>
+
+                <div id="tbtn">
+                    <input id="cancel" type="submit" value="CANCEL">
+                    <input id="save" type="submit" value="SAVE ADDRESS">
+
+                    <!-- <button>CANCEL</button> -->
+                    <!-- <button onclick="btn1()">SAVE ADDRESS</button> -->
+                </div>
+
+            </div>
+            </form>
         </div>
-        <div id="scroll">
-<input type="text" placeholder="Full Name" id="name" required>
-
-<div class="inputd">
-
-    <input type="text" placeholder="Mobile No." id="mobile" required>
-
-    <input type="text" placeholder="Alternate No.(Optional)" >
-</div>
-<hr>
-<div class="inputd">
-<form id="form">
-    <input type="text" placeholder="Pincode*" id="pin" required>
-
-    <input type="text" placeholder="City*" id="city" required>
-</div>
-<input type="text" placeholder="Flat/House No./Building*" id="house" required>
-<input type="text" placeholder="Area/Locality*" id="area" required>
-<input type="text" placeholder="Landmark(Optional)" id="name" required>
-
-
-
-    <p>Tag this location for later</p>
-    <div id="home">
-       
-
-        <div class="home1">
-          <a href="">  <div>Home</div></a>
-            <a href=""><div>Office</div></a>
-        </div>
-        <a href=""><div>Clear</div></a>
-       
-      
     </div>
 
-    <div id="tcheckbox">
-        <input type="checkbox" >
-
-        <p>Make this as my default address</p>
-    </div>
-
-    <div id="tbtn">
-        <input id="cancel" type="submit" value="CANCEL">
-        <input id="save" type="submit" value="SAVE ADDRESS">
-
-        <!-- <button>CANCEL</button> -->
-        <!-- <button onclick="btn1()">SAVE ADDRESS</button> -->
-    </div>
-
-        </div>
-    </form>
-    </div>
-   </div>
-
-   <button id="unnati">button</button>
+    <button id="unnati">button</button>
 </body>
+
 </html>
-<script src="./taruScripts/addres.js">
- 
+<script src="./scripts/addres.js">
+
 </script>
