@@ -2,10 +2,13 @@
 let url ="https://firstcryserver.herokuapp.com/nightwears";
 let url1 = "https://firstcryserver.herokuapp.com/tshirt";
 let url2 = "https://firstcryserver.herokuapp.com/thermal";
-
+let product = JSON.parse(localStorage.getItem("productList")) || [];
+let short = JSON.parse(localStorage.getItem('shortlist')) || [];
+let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 async function getUserRepo(url) {
   let res = await fetch(url)
   let data = await res.json()
+  // product=[]
   localStorage.setItem("productList", JSON.stringify(data))
   items(data)
   console.log(data);
@@ -18,6 +21,7 @@ let brand =()=>{
   if(night.checked==true)
   {
     document.querySelector("#products").innerHTML = "";
+    // product=[];
     getUserRepo(url);
   }
   else{
@@ -28,6 +32,7 @@ let brand =()=>{
 let brand1 =()=>{
   if(thermal.checked==true)
   {
+    // product=[];
     document.querySelector("#products").innerHTML = "";
     getUserRepo(url2);
   }
@@ -39,12 +44,6 @@ let brand1 =()=>{
 night.addEventListener('change',brand);
 thermal.addEventListener('change',brand1);
 
-// localStorage.setItem("productList", JSON.stringify(data))
-let product = JSON.parse(localStorage.getItem("productList")) || [];
-let short = JSON.parse(localStorage.getItem('shortlist')) || [];
-let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
-// items(product)
-// console.log(product);
 
 function items(product) {
   product.map((elem) => {
@@ -148,8 +147,7 @@ function short_list(data) {
       localStorage.setItem('shortlist', JSON.stringify(short));
     }
   }
-  // short.push(data);
-  // localStorage.setItem('shortlist', JSON.stringify(short));
+  
 }
 // let c = 0;
 function cart(data) {
@@ -174,11 +172,11 @@ function cart(data) {
 }
 
 // Navbar linking
-document.getElementById("login").addEventListener("click", signIn);
+document.getElementById("login").addEventListener("click", function (){
+  window.location.href = "./login.html"
+});
 
-function signIn() {
-  window.location.href = "login.html"
-}
+
 
 document.getElementById("shortlist").addEventListener("click", function () {
   window.location.href = "shortlist.html"
