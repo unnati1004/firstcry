@@ -44,7 +44,7 @@ let product = JSON.parse(localStorage.getItem("productList")) || [];
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
 let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 // items(product)
-console.log(product);
+// console.log(product);
 
 function items(product) {
   product.map((elem) => {
