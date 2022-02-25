@@ -9,7 +9,15 @@ async function getUserRepo(url) {
 
   console.log(data);
 }
-getUserRepo(url);
+getUserRepo(url1);
+const night = document.getElementById("night");
+let brand =()=>{
+  if(night.checked==true)
+  {
+    getUserRepo(url);
+  }
+}
+night.addEventListener('change',brand);
 // localStorage.setItem("productList", JSON.stringify(data))
 let product = JSON.parse(localStorage.getItem("productList")) || [];
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
