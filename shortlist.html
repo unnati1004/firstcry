@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,19 @@
     <script src="https://kit.fontawesome.com/7fc6a624dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/shortlist.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <script src="https://kit.fontawesome.com/3ab027f621.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/db1e80451c.js" crossorigin="anonymous"></script>
 </head>
+
 <body style="background-image: url(https://cdn.fcglcdn.com/brainbees/images/n/main-bg.jpg)">
     <div id="container"></div>
     <div id="cont">
         <div id="bx1">
             <div id="t">My Account</div>
-            <div id="t1"> <p>My Order</p> </div>
+            <div id="t1">
+                <p>My Order</p>
+            </div>
             <div id="btt">
                 <div>Order History</div>
                 <hr>
@@ -29,7 +34,9 @@
                 <div>Your Queries</div>
                 <hr>
             </div>
-            <div id="t1"><p>Cash in My Account</p></div>
+            <div id="t1">
+                <p>Cash in My Account</p>
+            </div>
             <div id="btt">
                 <div>Loyalty cash</div>
                 <hr>
@@ -46,7 +53,9 @@
                 <div>My FPL Voucher</div>
                 <hr>
             </div>
-            <div id="t1"><p>My Profile</p></div>
+            <div id="t1">
+                <p>My Profile</p>
+            </div>
             <div id="btt">
                 <div>Personal Details</div>
                 <hr>
@@ -61,16 +70,26 @@
                 <div>Manage Subscription</div>
                 <hr>
             </div>
-            <div id="t1"><p>Guaranteed Savings</p></div>
-            <div id="t1"><p>Intellikit Subscriptions</p></div>
-            <div id="t1"><p>Gift Certificates</p></div>
-            <div id="t1"><p>Invites & Credits</p></div>
-            <div id="t1"><p>MY Reviews & Uploads</p></div>
+            <div id="t1">
+                <p>Guaranteed Savings</p>
+            </div>
+            <div id="t1">
+                <p>Intellikit Subscriptions</p>
+            </div>
+            <div id="t1">
+                <p>Gift Certificates</p>
+            </div>
+            <div id="t1">
+                <p>Invites & Credits</p>
+            </div>
+            <div id="t1">
+                <p>MY Reviews & Uploads</p>
+            </div>
         </div>
         <div id="bx0">
             <div id="tit">
                 <div>My Shortlist</div>
-               <div id="prd"></div> 
+                <div id="prd"></div>
                 <div id="clr">Clear All</div>
             </div>
             <hr>
@@ -81,30 +100,29 @@
     <div id="footer"></div>
 </body>
 <script src="./scripts/shortlist.js"></script>
+
 </html>
 <script type="module">
-import navbar from "./components/navbar.js";
+    import navbar from "./components/navbar.js";
 
-let ct = document.getElementById("container");
+    let ct = document.getElementById("container");
 
-ct.innerHTML=navbar();
+    ct.innerHTML = navbar();
 
-import footer from "./components/footer.js";
-    let addft=document.getElementById("footer");
-    addft.innerHTML= footer();
+    import footer from "./components/footer.js";
+    let addft = document.getElementById("footer");
+    addft.innerHTML = footer();
 
-    document.getElementById("login").addEventListener("click",signIn);
+    document.getElementById("login").addEventListener("click", signIn);
 
-    function signIn(){
-        window.location.href="login.html"
-}
+    function signIn() {
+        window.location.href = "login.html"
+    }
 
-document.getElementById("shortlist").addEventListener("click",function(){
-    window.location.href="shortlist.html"
-})
-document.getElementById("carticon").addEventListener("click",function(){
-    window.location.href="sumit.html";
-})
+    document.getElementById("shortlist").addEventListener("click", function () {
+        window.location.href = "shortlist.html"
+    })
+    document.getElementById("carticon").addEventListener("click", function () {
+        window.location.href = "sumit.html";
+    })
 </script>
-
-

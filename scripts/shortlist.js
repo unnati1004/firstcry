@@ -1,4 +1,5 @@
 var data = JSON.parse(localStorage.getItem("shortlist"));
+console.log(data);
 
 let cart_item = JSON.parse(localStorage.getItem('Cart')) || [];
 var count = 0;
@@ -17,10 +18,10 @@ data.map((el, index) => {
     var p = document.createElement("p");
     p.textContent = name;
 
-        var btn = document.createElement("button")
-        btn.textContent="ADD TO CART"
-        
-        btn.style.background="#ff7043"
+    var btn = document.createElement("button")
+    btn.textContent = "ADD TO CART"
+
+    btn.style.background = "#ff7043"
 
     var btn = document.createElement("button")
     btn.textContent = "ADD TO CART"
@@ -43,7 +44,7 @@ data.map((el, index) => {
 
     divf.append(btn, bt);
 
-    div.append(img, p, p1, divf);
+    div.append(img, p, divf);
 
     document.getElementById("bx3").append(div);
 
