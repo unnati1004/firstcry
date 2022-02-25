@@ -1,24 +1,44 @@
 
-let url ="http://localhost:2345/nightwears";
-let url1 = "http://localhost:2345/tshirt";
-let url2 = ""
+let url ="https://firstcryserver.herokuapp.com/nightwears";
+let url1 = "https://firstcryserver.herokuapp.com/tshirt";
+let url2 = "https://firstcryserver.herokuapp.com/thermal";
+
 async function getUserRepo(url) {
   let res = await fetch(url)
   let data = await res.json()
   localStorage.setItem("productList", JSON.stringify(data))
   items(data)
-
   console.log(data);
 }
+
 getUserRepo(url1);
+
 const night = document.getElementById("night");
 let brand =()=>{
   if(night.checked==true)
   {
+    document.querySelector("#products").innerHTML = "";
     getUserRepo(url);
+  }
+  else{
+    document.querySelector("#products").innerHTML = "";
+    getUserRepo(url1);
+  }
+}
+let brand1 =()=>{
+  if(thermal.checked==true)
+  {
+    document.querySelector("#products").innerHTML = "";
+    getUserRepo(url2);
+  }
+  else{
+    document.querySelector("#products").innerHTML = "";
+    getUserRepo(url1);
   }
 }
 night.addEventListener('change',brand);
+thermal.addEventListener('change',brand1);
+
 // localStorage.setItem("productList", JSON.stringify(data))
 let product = JSON.parse(localStorage.getItem("productList")) || [];
 let short = JSON.parse(localStorage.getItem('shortlist')) || [];
