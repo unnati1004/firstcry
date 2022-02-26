@@ -3,6 +3,7 @@
     height: 650px;
     /* border: 1px solid red; */
     margin: auto;
+
 }
 .imgdiv{
     height: 10%;
@@ -71,6 +72,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    border:solid 1px black;
 }
 .facebook>img{
     width: 40px;
