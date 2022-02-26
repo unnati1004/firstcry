@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap');
 
-/* *{
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
- #container { 
+#container {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* width:100%; */
-    /* border:solid 1px red; */
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -35,11 +30,12 @@ ul{
     margin-top: 0px;
    
 }
-/* #topNav>div{
+#topNav>div{
    
-} */
+}
 .logo{
     width: 12%;
+    margin-top: 10px;
 
 
 }
@@ -102,14 +98,15 @@ ul{
     display: flex;
     margin-left: 60px;
     
+    
 }
 .manuNav>div{
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 17px;
-    height: 30%;
+    height: 40%;
     border-right: 1.5px solid gray;
-    padding-right: 8px;
-    font-weight: 600;
+    padding-right: 15px;
+    font-weight: 500;
     margin-left: 5px;
     color: #575757;
     
@@ -154,14 +151,14 @@ ul{
 #megabar{
     width: 100%;
     height: 60px;
-    /* border:solid red 1px; */
-   margin-top: -20px;
+     margin-top: 15px;
     background-color: #ffd91c;
 }
+
 #megabar>nav>ul{
     display: flex;
-    margin-top: -30px;
-    
+    gap:10px;
+   padding-top: 20px;
     
     
     
@@ -175,13 +172,13 @@ li{
     color: #575757;
    
     /* padding-bottom: 20px; */
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 10px;
     
     
 }
 ul>li:nth-child(1){
-    margin-left: 20px;
+    margin-left: 10px;
 }
 ul>li:nth-child(2){
     margin-left: 15px;
