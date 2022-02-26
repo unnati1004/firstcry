@@ -3,6 +3,7 @@
     height: 650px;
     /* border: 1px solid red; */
     margin: auto;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .imgdiv{
     height: 10%;
