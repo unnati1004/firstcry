@@ -10,6 +10,85 @@
     <script src="https://kit.fontawesome.com/10271111fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/sumit.css">
     <style>
+        #tbt{
+            color: yellow;
+            border: 1px solid #ff764b;
+            border-radius: 5px;
+
+        }
+        #address{
+            /* border:  1px solid black; */
+            padding-left: 20px;
+          
+        }
+        #shopping{
+            /* margin-bottom: 20px; */
+        }
+        #tpin{
+            border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+        }
+        #taddP{
+            /* border: 1px solid black; */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        .OAdd>button{
+            /* border: 1px solid green;
+            height: 30px;
+            width: 60%;
+            text-align: center;
+           padding-top: 15px;
+           font-weight: bolder;
+           background-color: #ff7043;
+          
+           border-radius: 5px;
+           font-family: sans-serif; */
+           text-align: center;
+           align-items: center;
+            
+        }
+        .OAdd>button{
+            color: #ffffff;
+        }
+        .po>a{
+            color: #ffffff;
+        }
+        .Tpay{
+            /* border: 1px solid red; */
+            height: 35px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 22px;
+            gap: 20px;
+            background-color: #676767;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .ttot{
+            font-size: 15px;
+        }
+        .po{
+            font-weight: bolder;
+        }
+        #cartbodyright{
+            /* border: 2px solid black; */
+            margin-left: 20px;
+        }
+        #paymentid{
+            /* border: 2px solid red; */
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        }
+      
+       
     </style>
 </head>
 
@@ -49,16 +128,41 @@
                     <span id="add">
                         <i class="fa-solid fa-location-dot"></i>
                         <h3>Delivery Pincode:</h3>
-                        <input type="intiger">
+                        <input type="number" id="tpin">
                     </span>
-                    <button>Change</button>
+                    <button id="tbt">Change</button>
                 </div>
                 <hr>
                 <div id="itemsset">
+                    
                 </div>
+              
+               
 
             </div>
+          
+
+<div id="taddP">
+<div class="OAdd">
+<!-- <a  href="" id="unnati">Add Delivery Address</a> -->
+<button  id="unnati">Add Delivery address</button>
+</div>
+<div class="Tpay">
+<div>
+    <div class="ttot">Total</div>
+    <div class="price_sh"></div>
+</div>
+<div class="po">
+  <a href="">  Place Order</a>
+</div>
+</div>
+</div>
+
+
+
         </div>
+      
+           
         <div id="cartbodyright">
             <img id="sbiimg" src="https://cdn.fcglcdn.com/brainbees/banners/sbi_strip_13jan21.jpg" alt="">
 
@@ -86,10 +190,10 @@
             </div>
             <div id="paymentid">
                 <div>
-                    <h2>Payment Information</h2>
+                    <h3>Payment Information</h3>
                 </div>
                 <div>
-                    <h3>Value of Product(s)</h3>
+                    <h4>Value of Product(s)</h4>
                     <p class="price_show"></p>
                 </div>
                 <div>
@@ -108,7 +212,7 @@
 
 
             </div>
-            <button  id="unnati">Add Delivery address</button>
+            <!-- <button  id="unnati">Add Delivery address</button> -->
 
         </div>
     </div>
@@ -167,8 +271,7 @@
             <input id="cancel" type="submit" value="CANCEL">
             <input id="save" type="submit" value="SAVE ADDRESS">
     
-            <!-- <button>CANCEL</button> -->
-            <!-- <button onclick="btn1()">SAVE ADDRESS</button> -->
+        
         </div>
     
             </div>
