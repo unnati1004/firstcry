@@ -13,14 +13,11 @@
 #cartphoto {
   height: 100%;
 }
-
 #selectop {
   padding-top: 30px;
   padding-right: 40px;
-
   /* border: 1px solid white; */
 }
-
 #cartbody {
   width: 90%;
   height: 1000px;
