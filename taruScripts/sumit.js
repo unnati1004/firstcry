@@ -1,4 +1,4 @@
-var data = JSON.parse(localStorage.getItem("Cart"))||[]
+var data = JSON.parse(localStorage.getItem("Cart")) || []
 var short = JSON.parse(localStorage.getItem("shortlist")) || [];
 console.log(data)
 
@@ -20,13 +20,13 @@ data.map((el, index) => {
     var nm = document.createElement("p");
     nm.textContent = name;
     var btt = document.createElement("button")
-    btt.innerHTML ='<i class="fas fa-trash-alt fa-lg"></i>'+ "   "+ " REMOVE"
-    btt.setAttribute("id","btrem")
+    btt.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>' + "   " + " REMOVE"
+    btt.setAttribute("id", "btrem")
 
     var bttsl = document.createElement("button")
-    bttsl.innerHTML ='<i class="fa-duotone fa-circle-heart"></i>'+"  "+ "MOVE TO SHORTLIST"
+    bttsl.innerHTML = '<i class="fa-duotone fa-circle-heart"></i>' + "  " + "MOVE TO SHORTLIST"
 
-    bttsl.setAttribute("id","btrem")
+    bttsl.setAttribute("id", "btrem")
     bttsl.addEventListener("click", function () {
         short_list(el)
         remove(el)
@@ -56,8 +56,8 @@ data.map(function (elem) {
 })
 console.log(sum.toFixed(2));
 document.querySelector(".price_show").textContent = "Rs " + sum.toFixed(2);
-document.querySelector(".price_sho").textContent = "Rs "  + sum.toFixed(2);
-document.querySelector(".price_sh").textContent = "Rs "   + sum.toFixed(2);
+document.querySelector(".price_sho").textContent = "Rs " + sum.toFixed(2);
+document.querySelector(".price_sh").textContent = "Rs " + sum.toFixed(2);
 
 
 function remove(elm) {
@@ -95,79 +95,79 @@ function short_list(data) {
 // let divTag=document.getElementById("main")
 // function myFn(event){
 //     event.preventDefault()
-    
-   
- 
+
+
+
 //     divTag.innerHTML=""
 // }
 
 
-document.getElementById("form").addEventListener("submit",saveFn)
+document.getElementById("form").addEventListener("submit", saveFn)
 // arr=JSON.parse(localStorage.getItem("addres"))||[]
-myObj=JSON.parse(localStorage.getItem("addres"))||[]
-function saveFn(event){
+myObj = JSON.parse(localStorage.getItem("addres")) || []
+function saveFn(event) {
     event.preventDefault()
 
 
-    let name=document.getElementById("name").value;
-    let mobile=document.getElementById("mobile").value;
-    let pin=document.getElementById("pin").value;
-    let city=document.getElementById("city").value;
-    let house=document.getElementById("house").value;
-    let area=document.getElementById("area").value;
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("mobile").value;
+    let pin = document.getElementById("pin").value;
+    let city = document.getElementById("city").value;
+    let house = document.getElementById("house").value;
+    let area = document.getElementById("area").value;
 
-// console.log(name,mobile,pin,city,house,area);
+    // console.log(name,mobile,pin,city,house,area);
 
-myObj={
-name:name,
-mobile:mobile,
-pin:pin,
-city:city,
-house:house,
-area:area,
-}
+    myObj = {
+        name: name,
+        mobile: mobile,
+        pin: pin,
+        city: city,
+        house: house,
+        area: area,
+    }
 
-// arr.push(myObj)
-localStorage.setItem("addres",JSON.stringify(myObj))||[]
-// window.location.href="addres2.html"
+    // arr.push(myObj)
+    localStorage.setItem("addres", JSON.stringify(myObj)) || []
+    // window.location.href="addres2.html"
 
-// console.log(myObj);
+    // console.log(myObj);
 
 
 
     // alert("Thank You So Much Your delivery will be commming in this address")
 }
 
-document.getElementById("cancel").addEventListener("click",myCancel)
-function myCancel(){
-alert("Are You Sure you want cancel this")
-window.location.href="login.html"
+document.getElementById("cancel").addEventListener("click", myCancel)
+function myCancel() {
+    alert("Are You Sure you want cancel this")
+    window.location.href = "login.html"
 
 }
-let forget=document.getElementById("forget")
+let forget = document.getElementById("forget")
 window.onclick = function (event) {
     if (event.target == forget) {
         forget.style.display = "none";
     }
-  }
+}
 
 
 
-document.getElementById("unnati").addEventListener("click",()=>{
-    forget.style.display="block"
+document.getElementById("unnati").addEventListener("click", () => {
+    forget.style.display = "block"
 })
-document.getElementById('dummy').addEventListener("click",()=>{
-    window.location.href='shortlist.html'
+document.getElementById('dummy').addEventListener("click", () => {
+    window.location.href = 'shortlist.html'
 })
-let address2=document.getElementById("address2")
+let address2 = document.getElementById("address2")
 window.onclick = function (event) {
     if (event.target == address2) {
         address2.style.display = "none";
     }
-  }
-  document.getElementById("save").addEventListener("click",()=>{
-    localStorage.setItem("addres",JSON.stringify(myObj))||[]
-    address2.style.display="block"
+}
+document.getElementById("save").addEventListener("click", () => {
+    localStorage.setItem("addres", JSON.stringify(myObj)) || []
+    address2.style.display = "block"
 })
 
 let data1 = JSON.parse(localStorage.getItem("addres")) || []
@@ -198,7 +198,7 @@ function myFn(event) {
     event.preventDefault()
     divtag.innerHTML = ""
 }
-document.querySelector("button").addEventListener("click", btnFn)
+document.querySelector("#tarun").addEventListener("click", btnFn)
 
 function btnFn() {
     window.location.href = "cvv.html"

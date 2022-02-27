@@ -7,13 +7,13 @@ function cvvFn(event) {
   let cart = document.getElementById("cartno").value;
   let cvv = document.getElementById("cvv").value;
 
-  alert("we are Processing just a seconde plz");
+  alert("We are processing just a second !");
   setTimeout(() => {
-    if (cart == 123456789 && cvv == 799) {
-      alert("thank you your odrer will be deliverd soon");
+    if (cart == 123456789 && cvv == 123) {
+      alert("Thankyou ❤️  your order will be delivered soon");
       window.location.href = "./index.html"
     } else {
-      alert("sorry something some went wrong");
+      alert("Sorry something some went wrong !");
     }
   }, 1000);
 }
