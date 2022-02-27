@@ -32,9 +32,16 @@
 // }
 
 document.getElementById("form").addEventListener("submit", signIn)
+const togglePassword = document.querySelector('#togglePassword');
+let password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
 async function signIn(event) {
     event.preventDefault()
-    // console.log("here");
     let myObj = {
         email: form.email.value,
         password: form.password.value,
@@ -53,14 +60,11 @@ async function signIn(event) {
         if (data.message !== undefined) {
             alert(data.message);
         } else {
-            window.location.href = "./index.html"
+            window.location.href = "index.html"
         }
 
     } catch (e) {
         console.log(e.message);
     }
-
-    // alert("thank you")
-    // window.location.href = "login.html"
 
 }
