@@ -19,6 +19,15 @@
 // }
 
 document.getElementById("form").addEventListener("submit", signIn)
+
+const togglePassword = document.querySelector('#togglePassword');
+let password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
 async function signIn(event) {
     event.preventDefault()
     // console.log("here");
