@@ -9,27 +9,31 @@
     <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/10271111fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/sumit.css">
+    <link rel="stylesheet" href="./style/addres2.css">
     <style>
-        #tbt{
+        #tbt {
             color: yellow;
             border: 1px solid #ff764b;
             border-radius: 5px;
 
         }
-        #address{
+
+        #address {
             /* border:  1px solid black; */
             padding-left: 20px;
-          
+
         }
-        #shopping{
-            /* margin-bottom: 20px; */
-        }
-        #tpin{
+
+        /* #shopping{ */
+        /* margin-bottom: 20px; */
+        /* } */
+        #tpin {
             border: none;
-    border-bottom: 1px solid gray;
-    outline: none;
+            border-bottom: 1px solid gray;
+            outline: none;
         }
-        #taddP{
+
+        #taddP {
             /* border: 1px solid black; */
             height: 70px;
             display: flex;
@@ -38,7 +42,8 @@
             gap: 20px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         }
-        .OAdd>button{
+
+        .OAdd>button {
             /* border: 1px solid green;
             height: 30px;
             width: 60%;
@@ -49,17 +54,20 @@
           
            border-radius: 5px;
            font-family: sans-serif; */
-           text-align: center;
-           align-items: center;
-            
+            text-align: center;
+            align-items: center;
+
         }
-        .OAdd>button{
+
+        .OAdd>button {
             color: #ffffff;
         }
-        .po>a{
+
+        .po>a {
             color: #ffffff;
         }
-        .Tpay{
+
+        .Tpay {
             /* border: 1px solid red; */
             height: 35px;
             width: 30%;
@@ -73,22 +81,24 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .ttot{
+
+        .ttot {
             font-size: 15px;
         }
-        .po{
+
+        .po {
             font-weight: bolder;
         }
-        #cartbodyright{
+
+        #cartbodyright {
             /* border: 2px solid black; */
             margin-left: 20px;
         }
-        #paymentid{
-            /* border: 2px solid red; */
-            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-        }
-      
-       
+
+        /* #paymentid{ */
+        /* border: 2px solid red; */
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        /* } */
     </style>
 </head>
 
@@ -115,10 +125,13 @@
 
         <div id="cartbodyleft">
             <div id="shopping">
-               <div> <h2>Shopping Cart:</h2>
-            </div>
-            <div><h2 id="shopping_no"></h2></div>
-            
+                <div>
+                    <h2>Shopping Cart:</h2>
+                </div>
+                <div>
+                    <h2 id="shopping_no"></h2>
+                </div>
+
                 <div id="dummy">
                     <h2>My Shortlist</h2>
                 </div>
@@ -134,35 +147,35 @@
                 </div>
                 <hr>
                 <div id="itemsset">
-                    
+
                 </div>
-              
-               
+
+
 
             </div>
-          
 
-<div id="taddP">
-<div class="OAdd">
-<!-- <a  href="" id="unnati">Add Delivery Address</a> -->
-<button  id="unnati">Add Delivery address</button>
-</div>
-<div class="Tpay">
-<div>
-    <div class="ttot">Total</div>
-    <div class="price_sh"></div>
-</div>
-<div class="po">
-  <a href="">  Place Order</a>
-</div>
-</div>
-</div>
+
+            <div id="taddP">
+                <div class="OAdd">
+                    <!-- <a  href="" id="unnati">Add Delivery Address</a> -->
+                    <button id="unnati">Add Delivery address</button>
+                </div>
+                <div class="Tpay">
+                    <div>
+                        <div class="ttot">Total</div>
+                        <div class="price_sh"></div>
+                    </div>
+                    <div class="po">
+                        <a href=""> Place Order</a>
+                    </div>
+                </div>
+            </div>
 
 
 
         </div>
-      
-           
+
+
         <div id="cartbodyright">
             <img id="sbiimg" src="https://cdn.fcglcdn.com/brainbees/banners/sbi_strip_13jan21.jpg" alt="">
 
@@ -209,11 +222,8 @@
                     <h2>Final Payment</h2>
                     <p class="price_sh"></p>
                 </div>
-
-
             </div>
             <!-- <button  id="unnati">Add Delivery address</button> -->
-
         </div>
     </div>
 
@@ -221,64 +231,99 @@
         <div id="main">
             <div class="add">
                 <h2>Change/Save Address</h2>
-                <div >
-                   <a  id="tid" href=""> &#x2716;</a>
+                <div>
+                    <a id="tid" href=""> &#x2716;</a>
                 </div>
-               
+
             </div>
             <div id="scroll">
-    <input type="text" placeholder="Full Name" id="name" required>
-    
-    <div class="inputd">
-    
-        <input type="text" placeholder="Mobile No." id="mobile" required>
-    
-        <input type="text" placeholder="Alternate No.(Optional)" >
-    </div>
-    <hr>
-    <div class="inputd">
-    <form id="form">
-        <input type="text" placeholder="Pincode*" id="pin" required>
-    
-        <input type="text" placeholder="City*" id="city" required>
-    </div>
-    <input type="text" placeholder="Flat/House No./Building*" id="house" required>
-    <input type="text" placeholder="Area/Locality*" id="area" required>
-    <input type="text" placeholder="Landmark(Optional)" id="name" required>
-    
-    
-    
-        <p>Tag this location for later</p>
-        <div id="home">
-           
-    
-            <div class="home1">
-              <a href="">  <div>Home</div></a>
-                <a href=""><div>Office</div></a>
+                <input type="text" placeholder="Full Name" id="name" required>
+                <div class="inputd">
+                    <input type="text" placeholder="Mobile No." id="mobile" required>
+                    <input type="text" placeholder="Alternate No.(Optional)">
+                </div>
+                <hr>
+                <div class="inputd">
+                    <form id="form">
+                        <input type="text" placeholder="Pincode*" id="pin" required>
+                        <input type="text" placeholder="City*" id="city" required>
+                </div>
+                <input type="text" placeholder="Flat/House No./Building*" id="house" required>
+                <input type="text" placeholder="Area/Locality*" id="area" required>
+                <input type="text" placeholder="Landmark(Optional)" id="name" required>
+                <p>Tag this location for later</p>
+                <div id="home">
+                    <div class="home1">
+                        <a href="">
+                            <div>Home</div>
+                        </a>
+                        <a href="">
+                            <div>Office</div>
+                        </a>
+                    </div>
+                    <a href="">
+                        <div>Clear</div>
+                    </a>
+                </div>
+                    <div id="tcheckbox">
+                    <input type="checkbox">
+                    <p>Make this as my default address</p>
+                </div>
+                <div id="tbtn">
+                    <input id="cancel" type="submit" value="CANCEL">
+                    <input id="save" type="submit" value="SAVE ADDRESS">
+                </div>
             </div>
-            <a href=""><div>Clear</div></a>
-           
-          
+            </form>
         </div>
-    
-        <div id="tcheckbox">
-            <input type="checkbox" >
-    
-            <p>Make this as my default address</p>
-        </div>
-    
-        <div id="tbtn">
-            <input id="cancel" type="submit" value="CANCEL">
-            <input id="save" type="submit" value="SAVE ADDRESS">
-    
-        
-        </div>
-    
-            </div>
-        </form>
-        </div>
-       </div>
+    </div>
 
+
+
+<div id="address2">
+    <div id="main1">
+        <div class="add">
+            <h2>Change/Save Address</h2>
+            <div>
+                <a id="tid" href=""> &#x2716;</a>
+            </div>
+
+        </div>
+        <div>
+            <a href="addres.html">
+                <h3>+ Add New Address</h3>
+            </a>
+        </div>
+
+        <div id="tlocal">
+            <div id="del">
+                <div>
+                    <a href="index.html"><i class="fas fa-home fa-2x"></i></a>
+                </div>
+                <div id="del2">
+                    <a href="">
+                        <div> <i class="fas fa-pencil-alt fa-lg"></i></div>
+                    </a>
+                    <a href="addres.html" id="delfile">
+                        <div><i class="fas fa-trash-alt fa-lg"></i></div>
+                    </a>
+
+                </div>
+            </div>
+            <div id="tlocal1"></div>
+            <div id="tcheckbox">
+                <input type="checkbox">
+
+                <p>Make this as my default address</p>
+            </div>
+        </div>
+        <div>
+            <h3>Use Pincode to check delivery info</h3>
+            <input type="text" id="pincode" placeholder="Enter Pincode">
+            <button id="tarun">DELIVER HERE</button>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

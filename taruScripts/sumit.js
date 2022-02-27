@@ -129,7 +129,7 @@ area:area,
 
 // arr.push(myObj)
 localStorage.setItem("addres",JSON.stringify(myObj))||[]
-window.location.href="addres2.html"
+// window.location.href="addres2.html"
 
 // console.log(myObj);
 
@@ -159,3 +159,51 @@ document.getElementById("unnati").addEventListener("click",()=>{
 document.getElementById('dummy').addEventListener("click",()=>{
     window.location.href='shortlist.html'
 })
+let address2=document.getElementById("address2")
+window.onclick = function (event) {
+    if (event.target == address2) {
+        address2.style.display = "none";
+    }
+  }
+  document.getElementById("save").addEventListener("click",()=>{
+    localStorage.setItem("addres",JSON.stringify(myObj))||[]
+    address2.style.display="block"
+})
+
+let data1 = JSON.parse(localStorage.getItem("addres")) || []
+console.log(data1);
+let divTag = document.getElementById("tlocal1")
+function appendData(data1, index) {
+    let div = document.createElement("div")
+    let name = document.createElement("p")
+    let mobile = document.createElement("p")
+    let pin = document.createElement("p")
+    let city = document.createElement("p")
+    let Add = document.createElement("p")
+    let house = document.createElement("p")
+    name.innerText = `Name:  ${data1.name}`
+    mobile.innerText = `Mobile No:  ${data1.mobile}`
+    pin.innerText = `Pincode:  ${data1.pin}`
+    city.innerText = `City: ${data1.city}`
+    Add.innerText = `Add:  ${data1.area}`
+    house.innerText = `House No: ${data1.house}`
+    div.append(name, mobile, pin, city, Add, house)
+    divTag.append(div)
+}
+appendData(data1)
+
+document.getElementById("tid").addEventListener("click", myFn)
+let divtag = document.getElementById("main")
+function myFn(event) {
+    event.preventDefault()
+    divtag.innerHTML = ""
+}
+document.querySelector("button").addEventListener("click", btnFn)
+
+function btnFn() {
+    window.location.href = "cvv.html"
+}
+document.getElementById("delfile").addEventListener("click", delF)
+function delF() {
+    alert("are u sure You want to Delete This");
+}

@@ -35,7 +35,7 @@ area:area,
 
 // arr.push(myObj)
 localStorage.setItem("addres",JSON.stringify(myObj))
-window.location.href="addres2.html"
+// window.location.href="addres2.html"
 
 // console.log(myObj);
 
