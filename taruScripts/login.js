@@ -60,7 +60,7 @@ async function signIn(event) {
         if (data.message !== undefined) {
             alert(data.message);
         } else {
-            window.location.href = "./index.html"
+            window.location.href = "index.html"
         }
 
     } catch (e) {
