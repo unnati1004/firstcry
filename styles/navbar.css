@@ -35,6 +35,7 @@ ul{
 }
 .logo{
     width: 12%;
+    margin-top: 10px;
 
 
 }
@@ -97,14 +98,15 @@ ul{
     display: flex;
     margin-left: 60px;
     
+    
 }
 .manuNav>div{
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 17px;
-    height: 30%;
+    height: 40%;
     border-right: 1.5px solid gray;
-    padding-right: 8px;
-    font-weight: 600;
+    padding-right: 15px;
+    font-weight: 500;
     margin-left: 5px;
     color: #575757;
     
@@ -149,11 +151,20 @@ ul{
 #megabar{
     width: 100%;
     height: 60px;
+<<<<<<< HEAD
   margin-top: 15px;
+=======
+     margin-top: 15px;
+>>>>>>> 8c1649ab80b938705597ec59c7ac08550094400d
     background-color: #ffd91c;
 }
+
 #megabar>nav>ul{
     display: flex;
+<<<<<<< HEAD
+=======
+    gap:10px;
+>>>>>>> 8c1649ab80b938705597ec59c7ac08550094400d
    padding-top: 20px;
     
     
@@ -170,6 +181,7 @@ li{
     /* padding-bottom: 20px; */
     padding-left: 5px;
     padding-right: 10px;
+    
     
 }
 ul>li:nth-child(1){

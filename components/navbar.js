@@ -28,7 +28,11 @@ function navbar() {
             <a href="./shortlist.html"><span>Shortlist</span></a>
          </div>
         <div  class="location" id="carticon">
+<<<<<<< HEAD
         <a href="boy.html">
+=======
+        <a href="sumit.html">
+>>>>>>> 8c1649ab80b938705597ec59c7ac08550094400d
             <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" mr="8" class="Iconp"
             stroke="greyBase" iconsize="20">
             <path

@@ -1,12 +1,10 @@
-#main{
+#main1{
     width: 33%;
     height: 600px;
     /* border: 1px solid black; */
 float: right;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    
-
-
 }
 .add{
     width: 100%;
@@ -93,7 +91,7 @@ padding-left: 15px;
    border-bottom: 1px solid gray;
    margin-left: 20px;
 }
-button{
+#tarun{
    margin-top: 30px;
    padding: 14px 140px;
   margin-left: 30px;
