@@ -149,12 +149,12 @@ ul{
 #megabar{
     width: 100%;
     height: 60px;
-   margin-top: -20px;
+  margin-top: 15px;
     background-color: #ffd91c;
 }
 #megabar>nav>ul{
     display: flex;
-    margin-top: -30px;
+   padding-top: 20px;
     
     
     
@@ -168,12 +168,12 @@ li{
     color: #575757;
    
     /* padding-bottom: 20px; */
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 10px;
     
 }
 ul>li:nth-child(1){
-    margin-left: 20px;
+    margin-left: 10px;
 }
 ul>li:nth-child(2){
     margin-left: 15px;
