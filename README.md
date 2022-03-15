@@ -72,8 +72,7 @@ https://tanishqclone.herokuapp.com/index
 
 
 ## Screenshots :- 
-<!-- ![frontpage](https://user-images.githubusercontent.com/87421824/135976908-fd35150c-3215-48f7-b21d-b402e36371ec.png) -->
+## For more details :- ![frontpage](https://user-images.githubusercontent.com/96103401/158337719-d246069e-bd07-4be7-84e6-b675f776de92.png)
 
-## For more details :- 
 [Blog]( https://medium.com/@ossalunkhe09/cloning-firstcry-website-cf13071992cf)
 
