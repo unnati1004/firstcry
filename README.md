@@ -1,6 +1,6 @@
 # first-cry-Web-Clone
 
-![first-cry](https://gracious-poincare-a35f86.netlify.app/)
+![first-cry](https://user-images.githubusercontent.com/96103401/158337065-c1e2e63e-7bcf-41b7-924b-3332eb5606a3.png)
 
 
 # Welcome :wave:
