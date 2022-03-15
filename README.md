@@ -21,7 +21,7 @@
 [Demo of project](https://drive.google.com/file/d/1zpSMY2SW8PYOS4i9NioGIY-cnNR78kAE/view?usp=sharing)
 
 ## deployment Link:-
-https://tanishqclone.herokuapp.com/index
+https://friendly-goldwasser-04fd7a.netlify.app/index.html
 
 ## Contributers :- 
 - #### [Omkar](https://www.linkedin.com/in/omkar-salunkhe-1ba371228/)
