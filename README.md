@@ -21,7 +21,7 @@
 [Demo of project](https://drive.google.com/file/d/1zpSMY2SW8PYOS4i9NioGIY-cnNR78kAE/view?usp=sharing)
 
 ## deployment Link:-
-firstcry-clone-project.netlify.app
+[firstcry-clone-project.netlify.app](https://cool-profiterole-b3582e.netlify.app/)
 
 ## Contributers :- 
 - #### [Omkar](https://www.linkedin.com/in/omkar-salunkhe-1ba371228/)
